@@ -1,0 +1,10 @@
+﻿l_english:
+  
+  building_type_citadel_of_byrsa_01:1 "$building_citadel_of_byrsa_01$"
+  building_type_citadel_of_byrsa_01_desc:0 "#F The ancient Carthgainian stronghold of Byrsa was first constructed during the days of Dido. It is said that she lined the hill with oxhides to mark out its location. #!"
+  building_citadel_of_byrsa_01:0 "Byrsa Citadel"
+  building_citadel_of_byrsa_01_desc:0 "$building_type_citadel_of_byrsa_01_desc$"
+  building_citadel_of_byrsa_02:0 "Reconstructed Byrsa Citadel"
+  building_citadel_of_byrsa_02_desc:0 "After having went through major reconstruction, the Byrsa Citadel has been significantly fortified and turned into a proper palatial stronghold!"
+  
+  

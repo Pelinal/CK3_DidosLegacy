@@ -232,8 +232,8 @@ canaanite_religion = {
 				FertilityGodHerHim = CHARACTER_HERHIM_HER
 			}
 			
-			holy_site = iviza
-			holy_site = qartajana
+			holy_site = nicosia
+			holy_site = syrtripolis
 			holy_site = malta
 			holy_site = tyre
 			holy_site = latakia
