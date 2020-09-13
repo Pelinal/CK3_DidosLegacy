@@ -1,0 +1,65 @@
+﻿#punic characters
+
+#rulers of Siga
+
+punic0001 = {
+	name = "Gisgo"
+	dynasty = 990001
+	religion = canaanitism_pagan
+	culture = punic
+	667.1.1 = {
+		birth = yes
+	}
+	744.1.1 = {
+		death = yes
+	}
+}
+punic0002 = {
+	name = "Hyrum"
+	female = yes
+	dynasty = 990001
+	religion = canaanitism_pagan
+	culture = punic
+	father = punic0001
+	703.1.1 = {
+		birth = yes
+	}
+	770.1.1 = { death = yes }
+}
+punic0003 = {
+	name = "Juba"
+	dynasty = 990001
+	religion = canaanitism_pagan
+	culture = punic
+	father = punic0002
+	
+	martial = 12
+	trait = "strategist"
+	trait = "holy_warrior"
+	trait = "education_martial_3"
+	
+	749.1.1 = {
+		birth = yes
+	}
+	834.1.1 = {
+		death = yes
+	}
+}
+punic0004 = {
+	name = "Gisgo"
+	dynasty = 990001
+	religion = canaanitism_pagan
+	culture = punic
+	father = punic0003
+	dna = "M+wz7LKSspI1+jX6AHQAdAGHAYcAdgB2AHoAegB5AHkAfQB9AYwBjABzAHMAaABoAGYAZgGEAYQAeAB4AEwATAGgAaAAZABkAFMAUwGJAYkBoQGhAGsAawB8AHwAdQB1AYQBhAB+AH4BhgGGAHcAdwB7AHsBhwGHAbIBsgHHAccAKgAqAZkBmQBmAGYAjQCNADEAMQEqASoBLgEuACYAJgFwAXAAEgASAQYBBgAJAAkBKgEqAF0AXQFXAVcAigCKABEAEQAOAA4BCwELACUAJQAXABcAFAAUABkAGQArACsBFwEXACQAJAEuAS4BHQEdAAYABgEBAQEBVAFUAFwAXAEmASYBfAF8AXsBewAVABUBcgFyAXUBdQEkASQBgwGDAWkBaQAXABcAFwAXADMAMwBfAF8EMwQzARcBFwATABMA2gDaAqUCpQGPAY8AgACAABcAFwA3ADcAWQBZAKMAowGfAZ8AfwB/BPUE9QGHAYcBlwGXCiYKJgmZCZkCuQK5Ae4B7gOOA44CwQLBA7EDsQQJBAkABgAGAAAAAAHhAeE="
+	stewardship = 8
+	trait = "education_stewardship_3"
+	trait = "zealous"
+	
+	824.1.1 = {
+		birth = yes
+	}
+	905.1.1 = {
+		death = yes
+	}
+}

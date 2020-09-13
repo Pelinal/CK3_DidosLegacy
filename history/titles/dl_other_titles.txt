@@ -1,0 +1,14 @@
+### Dido's Legacy Titular Title History
+
+d_siga = {
+	760.1.1 = {
+		government = feudal_government
+		holder = punic0003
+	}
+	834.1.1 = {
+		holder = punic0004
+	}
+	905.1.1 = {
+		holder = 0
+	}
+}

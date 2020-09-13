@@ -1,0 +1,358 @@
+﻿canaanite_group = {
+	
+	graphical_cultures = {
+		#israelite_group_coa_gfx
+		arabic_group_coa_gfx
+		mena_building_gfx
+		byzantine_clothing_gfx
+		mena_unit_gfx
+	}
+	
+	mercenary_names = {
+		{ name = mercenary_company_phoenician_marines }
+		{ name = mercenary_company_the_elephanteers }
+	}
+
+	punic = {
+		
+		color = { 0.4 0.3 0.6 }
+
+		cadet_dynasty_names = {
+			"dynn_Sigibal"
+			{ "dynnp_adn" "dynn_Murgi" }
+			"dynn_Lev"
+			"dynn_Barak"
+			"dynn_Hadzrubalid"
+			"dynn_Adonyson"
+			"dynn_Miklyaton"
+			"dynn_Donisid"
+			"dynn_Shemenid"
+			"dynn_Tammuz"
+			"dynn_Adoniad"
+			"dynn_Hyrumal"
+			"dynn_Botryson"
+			"dynn_Shamayim"
+			"dynn_Danelid"
+			"dynn_Zimridan"
+			"dynn_Sakarbaal"
+			"dynn_Uticon"
+			"dynn_Maharbaal"
+			"dynn_Yutpanon"
+			"dynn_Ashtzaphid"
+			"dynn_Ashtartyaton"
+			"dynn_Bodeshmun"
+			"dynn_Melqartpilles"
+			"dynn_Aradusid"
+			"dynn_Melqartpilles"
+			"dynn_Milkherem"
+			"dynn_Itthobaal"
+			"dynn_Hailamid"
+			"dynn_Adonon"
+			"dynn_Abdosirid"
+			"dynn_Tammuzon"
+			"dynn_Aqhatid"
+			"dynn_Beiruton"
+			"dynn_Astartid"
+			"dynn_Yutpanid"
+			"dynn_Barekbaal"
+			"dynn_Azmelqart"
+			"dynn_Adohnes"
+			"dynn_Sikarbaal"
+			"dynn_Balbid"
+			"dynn_Ahiramid"
+			"dynn_Aderbaal"
+			"dynn_Jubanid"
+			"dynn_Germelqart"
+			"dynn_Bodeshmunon"
+			"dynn_Hiempsalid"
+			"dynn_Jubalon"
+			"dynn_Addilon"
+			"dynn_Maharbaalid"
+			"dynn_Tabnitid"
+			"dynn_Hannonid"
+			"dynn_Magonid"
+		}
+
+		dynasty_names = {
+			"dynn_Sigibal"
+			{ "dynnp_adn" "dynn_Murgi" }
+			"dynn_Lev"
+			"dynn_Barak"
+			"dynn_Hadzrubalid"
+			"dynn_Adonyson"
+			"dynn_Miklyaton"
+			"dynn_Donisid"
+			"dynn_Shemenid"
+			"dynn_Tammuz"
+			"dynn_Adoniad"
+			"dynn_Hyrumal"
+			"dynn_Botryson"
+			"dynn_Shamayim"
+			"dynn_Danelid"
+			"dynn_Zimridan"
+			"dynn_Sakarbaal"
+			"dynn_Uticon"
+			"dynn_Maharbaal"
+			"dynn_Yutpanon"
+			"dynn_Ashtzaphid"
+			"dynn_Ashtartyaton"
+			"dynn_Bodeshmun"
+			"dynn_Melqartpilles"
+			"dynn_Aradusid"
+			"dynn_Melqartpilles"
+			"dynn_Milkherem"
+			"dynn_Itthobaal"
+			"dynn_Hailamid"
+			"dynn_Adonon"
+			"dynn_Abdosirid"
+			"dynn_Tammuzon"
+			"dynn_Aqhatid"
+			"dynn_Beiruton"
+			"dynn_Astartid"
+			"dynn_Yutpanid"
+			"dynn_Barekbaal"
+			"dynn_Azmelqart"
+			"dynn_Adohnes"
+			"dynn_Sikarbaal"
+			"dynn_Balbid"
+			"dynn_Ahiramid"
+			"dynn_Aderbaal"
+			"dynn_Jubanid"
+			"dynn_Germelqart"
+			"dynn_Bodeshmunon"
+			"dynn_Hiempsalid"
+			"dynn_Jubalon"
+			"dynn_Addilon"
+			"dynn_Maharbaalid"
+			"dynn_Tabnitid"
+			"dynn_Hannonid"
+			"dynn_Magonid"
+		}
+		
+		male_names = {
+			Hanno Malchus Mago Hasdrubal Hamilcar Himilco Hannibal Gisco Bomilcar Adherbal Bodo Bostar Carthalo Clitomachus Gisgo Aqhat Qarnaim Abdmelqart Abdastartus Adoniah Yarikh Baltsar Bodeshmun Milkyaton
+			Boldizsar Resheph Balthasar Ashtartyaton Baltser Hyrum Hailama Zephon Baldo Balzer Adonia Ugarit Yutpan Yehawwielon Baalshillek Hiram Baltser Adohnes Beirut Bodmelqart Shamayim Azmelqart Batnoam 
+			Adad Abbar Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Boulomenus Chelbes Tabnit Zimrida Gerbaal Gerimilki Khiletzbaal Baaliaton Barekbaal Urumilki Yehomilk Yadamilk Paltibaal Abirami
+			Eshbaal Eugoras Germelqart Maharbal Mattan Metallo Milkherem Milkiram Danel Kanmi Maharbaal Milkpilles Melqartpilles Massinissa Hiempsal Juba Melqartshama Ahumm Eshmounhilles Eshmouniaton Itthobaal 
+			Philosir Boodes Bomical Abdhamon Abibaal Bodbaal
+		}
+		female_names = {
+			Dido Sophonisba Alissa Birkana Adonica Amatbal Ashtoreth Amatashtart Imashmon Izabel Tanyth Jezebelle Birkanda Zibqet Melita Barkitbal Jezebel Sisa Demna Astarte Amotmilqart Azibal Adonyah Tanith 
+			Arshut Jezibel Tanni Birkanda Amatbal Anath Coryender Coriander Tanyih Arishot Ashdonbal Yasha Ummashtart Shiba Pawly Shapash Amma Mitunbaal Arashtibal Tanis Domina Izavel Quarta Tanythe Bisha Nikkal
+			Abdosir Arishat Batnoam Shayna Tamar Adiya Tabua Yapa Ytab Suhaima Huldu Mashah Gamila Asherah Iezabel Elissa Muttunbaal
+		}
+		
+		dynasty_of_location_prefix = "dynnp_adn"
+		
+		ethnicities = {
+			10 = arab
+		}
+	}
+	phoenician = {
+		
+		color = { 0.7 0.3 0.6 }
+
+		cadet_dynasty_names = {
+			{ "dynnp_adn" "dynn_Infa" }
+			"dynn_Sigibal"
+			{ "dynnp_adn" "dynn_Murgi" }
+			"dynn_Lev"
+			"dynn_Barak"
+			"dynn_Hadzrubalid"
+			"dynn_Adonyson"
+			"dynn_Miklyaton"
+			"dynn_Donisid"
+			"dynn_Shemenid"
+			"dynn_Tammuz"
+			"dynn_Adoniad"
+			"dynn_Hyrumal"
+			"dynn_Botryson"
+			"dynn_Shamayim"
+			"dynn_Danelid"
+			"dynn_Zimridan"
+			"dynn_Sakarbaal"
+			"dynn_Uticon"
+			"dynn_Maharbaal"
+			"dynn_Yutpanon"
+			"dynn_Ashtzaphid"
+			"dynn_Ashtartyaton"
+			"dynn_Bodeshmun"
+			"dynn_Melqartpilles"
+			"dynn_Aradusid"
+			"dynn_Melqartpilles"
+			"dynn_Milkherem"
+			"dynn_Itthobaal"
+			"dynn_Hailamid"
+			"dynn_Adonon"
+			"dynn_Abdosirid"
+			"dynn_Tammuzon"
+			"dynn_Aqhatid"
+			"dynn_Beiruton"
+			"dynn_Astartid"
+			"dynn_Yutpanid"
+			"dynn_Barekbaal"
+			"dynn_Azmelqart"
+			"dynn_Adohnes"
+			"dynn_Sikarbaal"
+			"dynn_Balbid"
+			"dynn_Ahiramid"
+			"dynn_Aderbaal"
+			"dynn_Jubanid"
+			"dynn_Germelqart"
+			"dynn_Bodeshmunon"
+			"dynn_Hiempsalid"
+			"dynn_Jubalon"
+			"dynn_Addilon"
+			"dynn_Maharbaalid"
+			"dynn_Tabnitid"
+			"dynn_Hannonid"
+			"dynn_Magonid"
+		}
+
+		dynasty_names = {
+			{ "dynnp_adn" "dynn_Infa" }
+			"dynn_Sigibal"
+			{ "dynnp_adn" "dynn_Murgi" }
+			"dynn_Lev"
+			"dynn_Barak"
+			"dynn_Hadzrubalid"
+			"dynn_Adonyson"
+			"dynn_Miklyaton"
+			"dynn_Donisid"
+			"dynn_Shemenid"
+			"dynn_Tammuz"
+			"dynn_Adoniad"
+			"dynn_Hyrumal"
+			"dynn_Botryson"
+			"dynn_Shamayim"
+			"dynn_Danelid"
+			"dynn_Zimridan"
+			"dynn_Sakarbaal"
+			"dynn_Uticon"
+			"dynn_Maharbaal"
+			"dynn_Yutpanon"
+			"dynn_Ashtzaphid"
+			"dynn_Ashtartyaton"
+			"dynn_Bodeshmun"
+			"dynn_Melqartpilles"
+			"dynn_Aradusid"
+			"dynn_Melqartpilles"
+			"dynn_Milkherem"
+			"dynn_Itthobaal"
+			"dynn_Hailamid"
+			"dynn_Adonon"
+			"dynn_Abdosirid"
+			"dynn_Tammuzon"
+			"dynn_Aqhatid"
+			"dynn_Beiruton"
+			"dynn_Astartid"
+			"dynn_Yutpanid"
+			"dynn_Barekbaal"
+			"dynn_Azmelqart"
+			"dynn_Adohnes"
+			"dynn_Sikarbaal"
+			"dynn_Balbid"
+			"dynn_Ahiramid"
+			"dynn_Aderbaal"
+			"dynn_Jubanid"
+			"dynn_Germelqart"
+			"dynn_Bodeshmunon"
+			"dynn_Hiempsalid"
+			"dynn_Jubalon"
+			"dynn_Addilon"
+			"dynn_Maharbaalid"
+			"dynn_Tabnitid"
+			"dynn_Hannonid"
+			"dynn_Magonid"
+		}
+
+		male_names = {
+			Hanno Malchus Mago Hasdrubal Hamilcar Himilco Hannibal Gisco Bomilcar Adherbal Bodo Bostar Carthalo Clitomachus Gisgo Aqhat Qarnaim Abdmelqart Abdastartus Adoniah Yarikh Baltsar Bodeshmun Milkyaton
+			Boldizsar Resheph Balthasar Ashtartyaton Baltser Hyrum Hailama Zephon Baldo Balzer Adonia Ugarit Yutpan Yehawwielon Baalshillek Hiram Baltser Adohnes Beirut Bodmelqart Shamayim Azmelqart Batnoam 
+			Adad Abbar Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Boulomenus Chelbes Tabnit Zimrida Gerbaal Gerimilki Khiletzbaal Baaliaton Barekbaal Urumilki Yehomilk Yadamilk Paltibaal Abirami
+			Eshbaal Eugoras Germelqart Maharbal Mattan Metallo Milkherem Milkiram Danel Kanmi Maharbaal Milkpilles Melqartpilles Massinissa Hiempsal Juba Melqartshama Ahumm Eshmounhilles Eshmouniaton Itthobaal 
+			Philosir Boodes Bomical Abdhamon Abibaal Bodbaal
+		}
+		female_names = {
+			Dido Sophonisba Alissa Birkana Adonica Amatbal Ashtoreth Amatashtart Imashmon Izabel Tanyth Jezebelle Birkanda Zibqet Melita Barkitbal Jezebel Sisa Demna Astarte Amotmilqart Azibal Adonyah Tanith 
+			Arshut Jezibel Tanni Birkanda Amatbal Anath Coryender Coriander Tanyih Arishot Ashdonbal Yasha Ummashtart Shiba Pawly Shapash Amma Mitunbaal Arashtibal Tanis Domina Izavel Quarta Tanythe Bisha Nikkal
+			Abdosir Arishat Batnoam Shayna Tamar Adiya Tabua Yapa Ytab Suhaima Huldu Mashah Gamila Asherah Iezabel Elissa Muttunbaal
+		}
+		
+		dynasty_of_location_prefix = "dynnp_adn"
+		
+		patronym_prefix_male = "dynnpat_pre_by"
+		patronym_prefix_female = "dynnpat_pre_byth"
+
+	
+		pat_grf_name_chance = 20
+		mat_grf_name_chance = 10
+		father_name_chance = 10
+		
+		pat_grm_name_chance = 40
+		mat_grm_name_chance = 20
+		mother_name_chance = 30
+		
+		ethnicities = {
+			10 = arab
+		}
+	}
+	rumiyim = {
+		
+		color = { 0.65 0.4 0.5 }
+
+		cadet_dynasty_names = {
+			"dynn_Flavius"
+			"dynn_Cocceius"
+			"dynn_Vitellius"
+			"dynn_Salvius"
+			"dynn_Pompeius"
+			"dynn_Claudius"
+			"dynn_Maximianus"
+			"dynn_Hadrianus"
+			"dynn_Pius"
+		}
+
+		dynasty_names = {
+			"dynn_Flavius"
+			"dynn_Cocceius"
+			"dynn_Vitellius"
+			"dynn_Salvius"
+			"dynn_Pompeius"
+			"dynn_Claudius"
+			"dynn_Maximianus"
+			"dynn_Hadrianus"
+			"dynn_Pius"
+		}
+
+		male_names = {
+			Hannus Malcus Macio Hasdrubalus Hamilian Himilcus Hannius Giscar Bomilcar Adhersus Bodan Bosarius Carthalus Clitomachus Gisgan Acatius Qarnaius Melcarian Abdastartus Adonias Yaricus Baltsar Bodeshmus Milkyatian
+			Boldizsar Resisus Balthus Ashtartyatian Baltsus Hyrian Hailian Zephonicus Zephonius Adonus Iehavielus Baalsilicus Hiram Baltsirus Adohnus Beirutus Bodmelcer Scamavius Asmelcarius Batniumus
+			Adad Abbarus Baalus Agbalian Airous Asimilicus Baalhannus Bodasian Boulomenus Chelbus Tabnian Gerbulus Gerimilcus Baaliatus Barecibaal Urumilcius Uemilcus Yadamilcan Paltibalian Abiramius
+			Eshatus Eugorus Mattian Metallus Milcerenius Danelian Kanmius Melqartpilus Massinissus Hiempsalian Jubas Melqartshama Acumian Esmuniles Eshmouniatus
+			Philosius
+		}
+		female_names = {
+			Didia Sophonisa Alissa Bicana Adonica Amatia Asoretia Anatasana Imasmona Isabel Tanita Jesebella Bircana Sibceta Melita Barkitba Sisa Demna Astarte Anomilcara Asibal Adonua 
+			Tanni Amabalis Anacia Coridina Coriana Tania Arisa Yasia Shiba Pauwla Shapasia Amma Mitunbaal Arashtibal Tanis Domina Quarta Bisha Nicca
+			Abdosia Arisia Batnoam Shania Tamariana Adia Tabua Yapa Utia Hulda Masonia Gamila Asherah Iesabel Elissa
+		}
+		
+		dynasty_of_location_prefix = "dynnp_of"
+		patronym_prefix_male = "dynnpat_pre_filius"
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		ethnicities = {
+			10 = mediterranean
+		}
+	}
+}

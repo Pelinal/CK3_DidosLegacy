@@ -1,0 +1,249 @@
+﻿
+canaanite_religion = {
+	family = rf_pagan
+
+	doctrine = pagan_hostility_doctrine
+
+	pagan_roots = yes
+
+	#Main Group
+	doctrine = doctrine_no_head
+	doctrine = doctrine_gender_male_dominated
+	doctrine = doctrine_pluralism_fundamentalist
+	doctrine = doctrine_theocracy_temporal
+
+	#Marriage
+	doctrine = doctrine_concubines
+	doctrine = doctrine_divorce_allowed
+	doctrine = doctrine_bastardry_none
+	doctrine = doctrine_consanguinity_unrestricted
+
+	#Crimes
+	doctrine = doctrine_homosexuality_shunned
+	doctrine = doctrine_adultery_men_shunned
+	doctrine = doctrine_adultery_women_shunned
+	doctrine = doctrine_kinslaying_close_kin_crime
+	doctrine = doctrine_deviancy_shunned
+	doctrine = doctrine_witchcraft_accepted
+
+	#Clerical Functions
+	doctrine = doctrine_clerical_function_taxation
+	doctrine = doctrine_clerical_gender_either
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_temporal_appointment
+
+	traits = {
+		virtues = { patient diligent temperate just }
+		sins = { impatient lazy greedy gluttonous }
+	}
+
+	custom_faith_icons = {
+		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 dualism_custom_1 zoroastrian_custom_1 zoroastrian_custom_2 buddhism_custom_1 buddhism_custom_2 buddhism_custom_3 buddhism_custom_4 taoism_custom_1 yazidi_custom_1 sunni_custom_2 sunni_custom_3 sunni_custom_4 ibadi_custom muhakkima_1 muhakkima_2 muhakkima_4 muhakkima_5 muhakkima_6 judaism_custom_1
+	}
+
+	holy_order_names = {
+		{ name = "holy_order_the_tanitguard" }
+		{ name = "holy_order_molochs_firebrands" }
+		{ name = "holy_order_warriors_of_baal" }
+	}
+
+	holy_order_maa = { pikemen_unit }
+
+	localization = {
+		HighGodName = canaanitism_high_god_name
+		HighGodNamePossessive = canaanitism_high_god_name_possessive
+		HighGodNameSheHe = CHARACTER_SHEHE_HE
+		HighGodHerselfHimself = CHARACTER_HIMSELF
+		HighGodHerHis = CHARACTER_HERHIS_HIS
+		HighGodNameAlternate = canaanitism_high_god_name_alternate
+		HighGodNameAlternatePossessive = canaanitism_high_god_name_alternate_possessive
+
+		#Creator
+		CreatorName = canaanitism_creator_god_name
+		CreatorNamePossessive = canaanitism_creator_god_name_possessive
+		CreatorSheHe = CHARACTER_SHEHE_THEY
+		CreatorHerHis = CHARACTER_HERHIM_THEM
+		CreatorHerHim = CHARACTER_HERHIS_THEIR
+
+		#HealthGod
+		HealthGodName = canaanitism_health_god_name
+		HealthGodNamePossessive = canaanitism_health_god_name_possessive
+		HealthGodSheHe = CHARACTER_SHEHE_HE
+		HealthGodHerHis = CHARACTER_HERHIS_HIS
+		HealthGodHerHim = CHARACTER_HERHIM_HIM
+		
+		#FertilityGod
+		FertilityGodName = canaanitism_fertility_god_name
+		FertilityGodNamePossessive = canaanitism_fertility_god_name_possessive
+		FertilityGodSheHe = CHARACTER_SHEHE_SHE
+		FertilityGodHerHis = CHARACTER_HERHIS_HER
+		FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+		#WealthGod
+		WealthGodName = canaanitism_wealth_god_name
+		WealthGodNamePossessive = canaanitism_wealth_god_name_possessive
+		WealthGodSheHe = CHARACTER_SHEHE_HE
+		WealthGodHerHis = CHARACTER_HERHIS_HIS
+		WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+		#HouseholdGod
+		HouseholdGodName = canaanitism_household_god_name
+		HouseholdGodNamePossessive = canaanitism_household_god_name_possessive
+		HouseholdGodSheHe = CHARACTER_SHEHE_HE
+		HouseholdGodHerHis = CHARACTER_HERHIS_HIS
+		HouseholdGodHerHim = CHARACTER_HERHIM_HIM
+
+		#FateGod
+		FateGodName = canaanitism_fate_god_name
+		FateGodNamePossessive = canaanitism_fate_god_name_possessive
+		FateGodSheHe = CHARACTER_SHEHE_HE
+		FateGodHerHis = CHARACTER_HERHIS_HIS
+		FateGodHerHim = CHARACTER_HERHIM_HIM
+
+		#KnowledgeGod
+		KnowledgeGodName = canaanitism_knowledge_god_name
+		KnowledgeGodNamePossessive = canaanitism_knowledge_god_name_possessive
+		KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+		KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+		KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WarGod
+		WarGodName = canaanitism_war_god_name
+		WarGodNamePossessive = canaanitism_war_god_name_possessive
+		WarGodSheHe = CHARACTER_SHEHE_HE
+		WarGodHerHis = CHARACTER_HERHIS_HIS
+		WarGodHerHim = CHARACTER_HERHIM_HIM
+
+		#TricksterGod
+		TricksterGodName = canaanitism_trickster_god_name
+		TricksterGodNamePossessive = canaanitism_trickster_god_name_possessive
+		TricksterGodSheHe = CHARACTER_SHEHE_IT
+		TricksterGodHerHis = CHARACTER_HERHIS_THEIR
+		TricksterGodHerHim = CHARACTER_HERHIM_IT
+
+		#NightGod
+		NightGodName = canaanitism_night_god_name
+		NightGodNamePossessive = canaanitism_night_god_name_possessive
+		NightGodSheHe = CHARACTER_SHEHE_SHE
+		NightGodHerHis = CHARACTER_HERHIS_HER
+		NightGodHerHim = CHARACTER_HERHIM_HER
+
+		#WaterGod
+		WaterGodName = canaanitism_water_god_name
+		WaterGodNamePossessive = canaanitism_water_god_name_possessive
+		WaterGodSheHe = CHARACTER_SHEHE_HE
+		WaterGodHerHis = CHARACTER_HERHIS_HIS
+		WaterGodHerHim = CHARACTER_HERHIM_HIM
+
+
+		PantheonTerm = religion_the_gods
+		PantheonTermHasHave = pantheon_term_have
+		GoodGodNames = { canaanitism_high_god_name canaanitism_high_god_name_alternate canaanitism_health_god_name canaanitism_household_god_name canaanitism_fate_god_name canaanitism_fertility_god_name canaanitism_creator_god_name canaanitism_fire_god_name }
+		DevilName = canaanitism_devil_name
+		DevilNamePossessive = canaanitism_devil_name_possessive
+		DevilSheHe = CHARACTER_SHEHE_HE
+		DevilHerHis = CHARACTER_HERHIS_HIS
+		DevilHerselfHimself = CHARACTER_HIMSELF
+		EvilGodNames = { canaanitism_devil_name canaanitism_evil_god_yam canaanitism_evil_god_resheph canaanitism_evil_god_lotan }
+		HouseOfWorship = paganism_house_of_worship
+		HouseOfWorshipPlural = paganism_house_of_worship_plural
+		ReligiousSymbol = canaanitism_religious_symbol
+		ReligiousText = paganism_religious_text
+		ReligiousHeadName = canaanitism_religious_head_title
+		ReligiousHeadTitleName = canaanitism_religious_head_title_name
+		DevoteeMale = paganism_devotee
+		DevoteeMalePlural = paganism_devoteeplural
+		DevoteeFemale = paganism_devotee
+		DevoteeFemalePlural = paganism_devoteeplural
+		DevoteeNeuter = paganism_devotee
+		DevoteeNeuterPlural = paganism_devoteeplural
+		PriestMale = canaanitism_priest_male
+		PriestMalePlural = canaanitism_priest_male_plural
+		PriestFemale = canaanitism_priest_male
+		PriestFemalePlural = canaanitism_priest_male_plural
+		PriestNeuter = canaanitism_priest_male
+		PriestNeuterPlural = canaanitism_priest_male_plural
+		AltPriestTermPlural = paganism_priest_alternate_plural
+		BishopMale = canaanitism_bishop_male
+		BishopMalePlural = canaanitism_bishop_male_plural
+		BishopFemale = canaanitism_bishop_male
+		BishopFemalePlural = canaanitism_bishop_male_plural
+		BishopNeuter = canaanitism_bishop_male
+		BishopNeuterPlural = canaanitism_bishop_male_plural
+		DivineRealm = canaanitism_divine_realm
+		PositiveAfterLife = canaanitism_divine_realm
+		NegativeAfterLife = canaanitism_divine_realm
+		DeathDeityName = canaanitism_high_god_name
+		DeathDeityNamePossessive = canaanitism_high_god_name_possessive
+		DeathDeitySheHe = CHARACTER_SHEHE_HE
+		DeathDeityHerHis = CHARACTER_HERHIS_HIS
+		WitchGodName = witchgodname_canaanitism_heka
+		WitchGodHerHis = CHARACTER_HERHIS_HIS
+		WitchGodSheHe = CHARACTER_SHEHE_HE
+		WitchGodHerHim = CHARACTER_HERHIM_HIM
+		WitchGodMistressMaster = master
+		WitchGodMotherFather = father
+
+		GHWName = ghw_great_holy_war
+		GHWNamePlural = ghw_great_holy_wars
+	}
+
+	faiths = {
+		canaanitism_pagan = {
+			color = hsv { 0.4 0.3 0.6 }
+			icon = canaanite
+			reformed_icon = canaanite_reformed
+
+			holy_site = iviza
+			holy_site = qartajana
+			holy_site = malta
+			holy_site = tyre
+			holy_site = latakia
+
+			doctrine = unreformed_faith_doctrine
+
+			doctrine = tenet_esotericism
+			doctrine = tenet_divine_marriage
+			doctrine = tenet_astrology
+			#doctrine = tenet_carnal_exaltation
+		}
+		#canaanitism_reformed = {
+		#	color = { 1.0 0.45 0.0 }
+		#	icon = west_african
+		#}
+		tyrianism_pagan = {
+			color = hsv { 0.45 0.35 0.65 }
+			icon = canaanite_1
+			reformed_icon = canaanite_1_reformed
+			
+			localization = {
+				HighGodName = tyrianism_high_god_name
+				HighGodNamePossessive = tyrianism_high_god_name_possessive
+				HighGodNameSheHe = CHARACTER_SHEHE_HE
+				HighGodHerselfHimself = CHARACTER_HIMSELF
+				HighGodHerHis = CHARACTER_HERHIS_HIS
+				HighGodNameAlternate = tyrianism_high_god_name_alternate
+				HighGodNameAlternatePossessive = tyrianism_high_god_name_alternate_possessive
+				
+				FertilityGodName = tyrianism_fertility_god_name
+				FertilityGodNamePossessive = tyrianism_fertility_god_name_possessive
+				FertilityGodSheHe = CHARACTER_SHEHE_SHE
+				FertilityGodHerHis = CHARACTER_HERHIS_HER
+				FertilityGodHerHim = CHARACTER_HERHIM_HER
+			}
+			
+			holy_site = iviza
+			holy_site = qartajana
+			holy_site = malta
+			holy_site = tyre
+			holy_site = latakia
+
+			doctrine = unreformed_faith_doctrine
+
+			doctrine = tenet_esotericism
+			doctrine = tenet_divine_marriage
+			doctrine = tenet_astrology
+			#doctrine = tenet_carnal_exaltation
+		}
+	}
+}

@@ -1,0 +1,149 @@
+﻿######### Dido's Legacy Titles ##########
+
+#d_canaanitism_pagan_reformed = {
+#   color = { 190 130 185 }
+#   color2 = { 255 255 255 }
+#   
+#   #roman = "Collegium Punicus"
+#   
+#   definite_form = yes
+#   ruler_uses_title_name = no
+#   landless = yes
+#   no_automatic_claims = yes
+#   always_follows_primary_heir = yes
+#   destroy_if_invalid_heir = yes
+#	
+#	capital = c_tunis
+#}
+
+k_carthage = {
+	color = { 170 140 200 }
+	color2 = { 255 255 255 }
+
+	capital = c_tunis
+
+	cultural_names = {
+		roman = cn_carthago
+		greek = cn_qart_hadasht
+	}
+}
+
+k_phoenicia = {
+	color = { 200 140 200 }
+	color2 = { 255 255 255 }
+	
+	capital = c_acre
+	
+	cultural_names = {
+		roman = cn_phoenice
+		greek = cn_phoenice
+	}
+}
+
+e_mediterranea = {
+	color = { 30 30 130 }
+	color2 = { 255 255 255 }
+	
+	capital = c_tunis
+}
+
+#d_phoenician_marines = {
+#	color = { 74 174 85 }
+#	color2 = { 140 131 178 }
+#	
+#	title = "CAPTAIN"
+#	foa = "CAPTAIN_FOA"
+#	
+#	mercenary_type = phoenicians_composition
+#	
+#	culture = phoenician
+#	short_name = no
+#	capital = 771 #tyre
+#	landless = yes
+#	mercenary = yes
+#	primary = yes
+#	
+#	allow = { 
+#		always = no
+#	}
+#}
+
+#d_tanitguard = {
+#
+#	color = { 214 115 214 }
+#	
+#	capital = 817 # Carthage
+#
+#	title = "TANITOR"
+#	title_female = "TANITA"
+#	foa = "TANITOR_FOA"
+#	
+#	landless = yes
+#	holy_order = yes
+#	
+#	culture = punic
+#	religion = canaanite_pagan_reformed
+#	
+#	primary = yes
+#	
+#	monthly_income = 5
+#
+#	mercenary_type = tanits_composition
+#	
+#	allow = { always = no }
+#}
+
+d_siga = {
+	color = { 0 175 175 }
+	color2 = { 10 10 10 }
+	
+	capital = c_melilla
+}
+
+e_srivijaya = {
+	color = { 255 127 0 }
+	
+	landless = yes
+}
+
+#d_baalism_pagan = {
+#   color={190 130 185}
+#   color2={255 255 255}
+#   
+#   short_name = yes
+#   title = ADUNON
+#   title_female = ADATIW
+#   foa = "ADANON_FOA"
+#   
+#   capital = 817
+#   
+#   landless = yes
+#   primary = yes
+#   dynasty_title_names = no
+#   
+#   religion = baalist_pagan
+#   controls_religion = baalist_pagan
+#
+#   dignity = 75
+#   
+#   allow = { always = no }
+#}
+
+#k_qart_hadasht = {
+#	color = { 219 218 215 }
+#	color2 = { 55 55 55 } #OR: { 84 59 78 }
+#	
+#	short_name = no
+#	capital = 817 #Carthage - Qart-Hadast
+#	landless = no
+#	
+#	roman = "Carthago"
+#	#punic = "Qart-Hadast"
+#	
+#	#canaanite_pagan_reformed = 1000
+#
+#	allow = { # FORMED VIA INTRIGUE DECISION
+#		
+#		always = no
+#	}
+#}

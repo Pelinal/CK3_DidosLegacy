@@ -1,0 +1,55 @@
+﻿
+
+#############
+# Canaanite #
+#############
+
+# Canaanite
+
+iviza = {
+	county = c_iviza
+	
+	character_modifier = {
+		monthly_piety_gain_mult = 0.2
+	}
+	#flag = jerusalem_conversion_bonus # +20% County Conversion
+}
+
+qartajana = {
+	county = c_tunis
+	barony = b_qartajana
+	
+	character_modifier = {
+		development_growth_factor = 0.1
+		stewardship = 1
+	}
+}
+
+malta = {
+	county = c_malta
+	
+	character_modifier = {
+		cultural_head_fascination_mult = 0.05
+		monthly_county_control_change_factor = 0.05
+	}
+}
+
+tyre = {
+	county = c_acre
+	barony = b_tyre
+	
+	character_modifier = {
+		supply_duration = 0.2
+		holy_order_hire_cost_mult = -0.1
+	}
+}
+
+latakia = {
+	county = c_antiocheia
+	barony = b_latakia
+	
+	character_modifier = {
+		religious_vassal_opinion = 5
+		sway_scheme_power_mult = 0.1
+	}
+}

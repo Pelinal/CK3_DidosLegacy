@@ -1,0 +1,20 @@
+﻿l_english:
+
+# Cultural Names
+ cn_phoenice:0 "Phoenice"
+ cn_carthago:0 "Carthago"
+ cn_qart_hadasht:0 "Qart-Hadasht"
+ cn_siga:0 "Siga"
+ cn_siga_adj:0 "Sigan"
+ 
+# Title Localisation
+ d_siga:0 "Siga"
+ d_siga_adj:0 "Sigan"
+ k_carthage:0 "Carthage"
+ k_carthage_adj:0 "Carthaginian"
+ k_phoenicia:0 "Phoenicia"
+ k_phoenicia_adj:0 "Phoenician"
+ e_mediterranea:0 "Mediterranea"
+ e_mediterranea_adj:0 "Mediterranean"
+ e_srivijaya:0 "Srivijaya"
+ e_srivijaya_adj:0 "Srivijayan"
