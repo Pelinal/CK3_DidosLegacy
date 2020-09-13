@@ -1,4 +1,4 @@
-hanno_male = { Hanno Hannus }
+﻿hanno_male = { Hanno Hannus }
 malchus_male = { Malchus Malcus }
 mago_male = { Mago Macio }
 hasdrubalus_male = { Hasdrubal Hasdrubalus }
