@@ -74,19 +74,6 @@
 
 }
 
-# 4678 - MELILLA
-4679 = {	# 4678 - MELILLA
-	
-	# Misc
-	culture = punic
-	#culture = sanhaja
-	religion = canaanitism_pagan
-	
-	# History
-	1066.1.1 = { religion = ashari }
-
-}
-
 # 4683 - TANGER
 4683 = {	# 4683 - TANGER
 	
