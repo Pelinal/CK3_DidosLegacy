@@ -1,533 +1,530 @@
 ﻿990000 = {
     name = "dynn_Mahonid"
-	culture = punic
+	culture = culture:punic
 }
 990001 = {
 	name = "dynn_Sigibal"
-	culture = punic
+	culture = culture:punic
 }
 990002 = {
 	prefix = "dynnp_adn"
 	name = "dynn_Murgi"
-	culture = punic
+	culture = culture:punic
 }
 990003 = {
 	name = "dynn_Lev"
-	culture = punic
+	culture = culture:punic
 }
 990004 = {
 	name = "dynn_Barak"
-	culture = punic
+	culture = culture:punic
 }
 990005 = {
 	name = "dynn_Hadzrubalid"
-	culture = punic
+	culture = culture:punic
 }
 990006 = {
 	name = "dynn_Adonyson"
-	culture = punic
+	culture = culture:punic
 }
 990007 = {
 	name = "dynn_Miklyaton"
-	culture = punic
+	culture = culture:punic
 }
 990008 = {
 	name = "dynn_Donisid"
-	culture = punic
+	culture = culture:punic
 }
 990009 = {
 	name = "dynn_Shemenid"
-	culture = punic
+	culture = culture:punic
 }
 990010 = {
 	name = "dynn_Tammuz"
-	culture = punic
+	culture = culture:punic
 }
 990011 = {
 	name = "dynn_Adoniad"
-	culture = punic
+	culture = culture:punic
 }
 990012 = {
 	name = "dynn_Hyrumal"
-	culture = punic
+	culture = culture:punic
 }
 990013 = {
 	name = "dynn_Botryson"
-	culture = punic
+	culture = culture:punic
 }
 990014 = {
 	name = "dynn_Shamayim"
-	culture = punic
+	culture = culture:punic
 }
 990015 = {
 	name = "dynn_Danelid"
-	culture = punic
+	culture = culture:punic
 }
 990016 = {
 	name = "dynn_Zimridan"
-	culture = punic
+	culture = culture:punic
 }
 990017 = {
 	name = "dynn_Sakarbaal"
-	culture = punic
+	culture = culture:punic
 }
 990018 = {
 	name = "dynn_Uticon"
-	culture = punic
+	culture = culture:punic
 }
 990019 = {
 	name = "dynn_Maharbaal"
-	culture = punic
+	culture = culture:punic
 }
 990020 = {
 	name = "dynn_Yutpanon"
-	culture = punic
+	culture = culture:punic
 }
 990021 = {
 	name = "dynn_Ashtzaphid"
-	culture = punic
+	culture = culture:punic
 }
 990022 = {
 	name = "dynn_Ashtartyaton"
-	culture = punic
+	culture = culture:punic
 }
 990023 = {
 	name = "dynn_Bodeshmun"
-	culture = punic
+	culture = culture:punic
 }
 990024 = {
 	name = "dynn_Melqartpilles"
-	culture = punic
+	culture = culture:punic
 }
 990025 = {
 	name = "dynn_Aradusid"
-	culture = punic
+	culture = culture:punic
 }
 990026 = {
 	name = "dynn_Milkherem"
-	culture = punic
+	culture = culture:punic
 }
 990027 = {
 	name = "dynn_Itthobaal"
-	culture = punic
+	culture = culture:punic
 }
 990028 = {
 	name = "dynn_Hailamid"
-	culture = punic
+	culture = culture:punic
 }
 990029 = {
 	name = "dynn_Adonon"
-	culture = punic
+	culture = culture:punic
 }
 990030 = {
 	name = "dynn_Abdosirid"
-	culture = punic
+	culture = culture:punic
 }
 990031 = {
 	name = "dynn_Tammuzon"
-	culture = punic
+	culture = culture:punic
 }
 990032 = {
 	name = "dynn_Aqhatid"
-	culture = punic
+	culture = culture:punic
 }
 990033 = {
 	name = "dynn_Beiruton"
-	culture = punic
+	culture = culture:punic
 }
 990034 = {
 	name = "dynn_Astartid"
-	culture = punic
+	culture = culture:punic
 }
 990035 = {
 	name = "dynn_Yutpanid"
-	culture = punic
+	culture = culture:punic
 }
 990036 = {
 	name = "dynn_Barekbaal"
-	culture = punic
+	culture = culture:punic
 }
 990037 = {
 	name = "dynn_Azmelqart"
-	culture = punic
+	culture = culture:punic
 }
 990038 = {
 	name = "dynn_Adohnes"
-	culture = punic
+	culture = culture:punic
 }
 990039 = {
 	name = "dynn_Sikarbaal"
-	culture = punic
+	culture = culture:punic
 }
 990040 = {
 	name = "dynn_Balbid"
-	culture = punic
+	culture = culture:punic
 }
 990041 = {
 	name = "dynn_Ahiramid"
-	culture = punic
+	culture = culture:punic
 }
 990042 = {
 	name = "dynn_Aderbaal"
-	culture = punic
+	culture = culture:punic
 }
 990043 = {
 	name = "dynn_Jubanid"
-	culture = punic
+	culture = culture:punic
 }
 990044 = {
 	name = "dynn_Germelqart"
-	culture = punic
+	culture = culture:punic
 }
 990045 = {
 	name = "dynn_Bodeshmunon"
-	culture = punic
+	culture = culture:punic
 }
 990046 = {
 	name = "dynn_Hiempsalid"
-	culture = punic
+	culture = culture:punic
 }
 990047 = {
 	name = "dynn_Jubalon"
-	culture = punic
+	culture = culture:punic
 }
 990048 = {
 	name = "dynn_Addilon"
-	culture = punic
+	culture = culture:punic
 }
 990049 = {
 	name = "dynn_Maharbaalid"
-	culture = punic
+	culture = culture:punic
 }
 990050 = {
 	name = "dynn_Tabnitid"
-	culture = punic
+	culture = culture:punic
 }
 990051 = {
 	name = "dynn_Hannonid"
-	culture = punic
+	culture = culture:punic
 }
 990052 = {
 	name = "dynn_Magonid"
-	culture = punic
+	culture = culture:punic
 }
 ################# phoenician
 
 990053 = {
 	prefix = "dynnp_adn"
 	name = "dynn_Infa"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990054 = {
 	name = "dynn_Lev"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990055 = {
 	name = "dynn_Barak"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990056 = {
 	name = "dynn_Hadzrubalid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990057 = {
 	name = "dynn_Adonyson"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990058 = {
 	name = "dynn_Miklyaton"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990059 = {
 	name = "dynn_Donisid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990060 = {
 	name = "dynn_Shemenid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990061 = {
 	name = "dynn_Tammuz"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990062 = {
 	name = "dynn_Adoniad"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990063 = {
 	name = "dynn_Hyrumal"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990064 = {
 	name = "dynn_Botryson"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990065 = {
 	name = "dynn_Shamayim"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990066 = {
 	name = "dynn_Danelid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990067 = {
 	name = "dynn_Zimridan"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990068 = {
 	name = "dynn_Sakarbaal"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990069 = {
 	name = "dynn_Uticon"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990070 = {
 	name = "dynn_Maharbaal"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990071 = {
 	name = "dynn_Yutpanon"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990072 = {
 	name = "dynn_Ashtzaphid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990073 = {
 	name = "dynn_Ashtartyaton"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990074 = {
 	name = "dynn_Bodeshmun"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990075 = {
 	name = "dynn_Melqartpilles"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990076 = {
 	name = "dynn_Aradusid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990077 = {
 	name = "dynn_Milkherem"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990078 = {
 	name = "dynn_Itthobaal"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990079 = {
 	name = "dynn_Hailamid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990080 = {
 	name = "dynn_Adonon"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990081 = {
 	name = "dynn_Abdosirid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990082 = {
 	name = "dynn_Tammuzon"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990083 = {
 	name = "dynn_Aqhatid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990084 = {
 	name = "dynn_Beiruton"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990085 = {
 	name = "dynn_Astartid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990086 = {
 	name = "dynn_Yutpanid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990087 = {
 	name = "dynn_Barekbaal"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990088 = {
 	name = "dynn_Azmelqart"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990089 = {
 	name = "dynn_Adohnes"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990090 = {
 	name = "dynn_Sikarbaal"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990091 = {
 	name = "dynn_Balbid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990092 = {
 	name = "dynn_Ahiramid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990093 = {
 	name = "dynn_Aderbaal"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990094 = {
 	name = "dynn_Jubanid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990095 = {
 	name = "dynn_Germelqart"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990096 = {
 	name = "dynn_Bodeshmunon"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990097 = {
 	name = "dynn_Hiempsalid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990098 = {
 	name = "dynn_Jubalon"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990099 = {
 	name = "dynn_Addilon"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990100 = {
 	name = "dynn_Maharbaalid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990101 = {
 	name = "dynn_Tabnitid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990102 = {
 	name = "dynn_Hannonid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 990103 = {
 	name = "dynn_Magonid"
-	culture = phoenician
+	culture = culture:phoenician
 }
 ########################### rumiyim
 990189=
 {
 	name="dynn_Verinus"
-	culture="rumiyim"
-	religion="miaphysite"
+	culture = culture:rumiyim
 	forced_coa_religiongroup="christian"
 }
 990190=
 {
 	name="dynn_Marcianus"
-	culture="rumiyim"
-	religion="orthodox"
+	culture = culture:rumiyim
 	forced_coa_religiongroup="christian"
 }
 990191=
 {
 	name="dynn_Theodosius"
-	culture="rumiyim"
-	religion="orthodox"
+	culture = culture:rumiyim
 	forced_coa_religiongroup="christian"
 }
 990192=
 {
 	name="dynn_Constantius"
-	culture="rumiyim"
-	religion="catholic"
+	culture = culture:rumiyim
+
 	forced_coa_religiongroup="christian"
 }
 990193=
 {
 	name="dynn_Valentinianus"
-	culture="rumiyim"
-	religion="catholic"
+	culture = culture:rumiyim
+
 	forced_coa_religiongroup="christian"
 }
 990194=
 {
 	name="dynn_Iovianus"
-	culture="rumiyim"
-	religion="catholic"
+	culture = culture:rumiyim
+
 	forced_coa_religiongroup="christian"
 }
 990195=
 {
 	name="dynn_Constantinus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990196=
 {
 	name="dynn_Licinianus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990197=
 {
 	name="dynn_Daia"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990198=
 {
 	name="dynn_Armentarius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990199=
 {
 	name="dynn_Diocletianus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990200=
 {
 	name="dynn_Carus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990201=
 {
 	name="dynn_Dalmatius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990202=
 {
 	name="dynn_Tacitus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990203=
 {
 	name="dynn_Crinitus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990204=
 {
 	name="dynn_Domitius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
@@ -540,28 +537,28 @@
 990206=
 {
 	name="dynn_Valerianus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990207=
 {
 	name="dynn_Aemilius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990208=
 {
 	name="dynn_Trebonianus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990209=
 {
 	name="dynn_Messius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
@@ -574,161 +571,161 @@
 990211=
 {
 	name="dynn_Africanus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990212=
 {
 	name="dynn_Calvinus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990213=
 {
 	name="dynn_Maximus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990214=
 {
 	name="dynn_Thrax"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990215=
 {
 	name="dynn_Severus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990216=
 {
 	name="dynn_Antoninus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990217=
 {
 	name="dynn_Opellius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990218=
 {
 	name="dynn_Severus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990219=
 {
 	name="dynn_Didius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990220=
 {
 	name="dynn_Helvius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990221=
 {
 	name="dynn_Aurelius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990222=
 {
 	name="dynn_Verus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990223=
 {
 	name="dynn_Pius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990224=
 {
 	name="dynn_Hadrianus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990225=
 {
 	name="dynn_Traianus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990226=
 {
 	name="dynn_Cocceius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990227=
 {
 	name="dynn_Flavius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990228=
 {
 	name="dynn_Vitellius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990229=
 {
 	name="dynn_Salvius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990230=
 {
 	name="dynn_Sulpicius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
 	forced_coa_religiongroup="christian"
 }
 990231=
 {
 	name="dynn_Pompeius"
-	culture="rumiyim"
-	religion="miaphysite"
-	forced_coa_religiongroup="christian"
+	culture = culture:rumiyim
+
+	forced_coa_culture = culture:group="christian"
 }
 990232=
 {
 	name="dynn_Claudius"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
-	forced_coa_religiongroup="christian"
+	forced_coa_culture = culture:group="christian"
 }
 990233=
 {
 	name="dynn_Maximianus"
-	culture="rumiyim"
+	culture = culture:rumiyim
 	
-	forced_coa_religiongroup="christian"
+	forced_coa_culture = culture:group="christian"
 }

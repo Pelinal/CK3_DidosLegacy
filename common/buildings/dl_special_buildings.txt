@@ -1,11 +1,11 @@
-##########
+﻿##########
 # Citadel of Byrsa
 ##########
 
 citadel_of_byrsa_01 = {
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_the_citadel_of_aleppo.dds"
+	type_icon = "icon_building_dl_byrsa.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -35,7 +35,7 @@ citadel_of_byrsa_01 = {
 citadel_of_byrsa_02 = {
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_the_citadel_of_aleppo.dds"
+	type_icon = "icon_building_dl_byrsa.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no

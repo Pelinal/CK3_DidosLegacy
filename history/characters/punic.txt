@@ -16,7 +16,6 @@ punic0001 = {
 }
 punic0002 = {
 	name = "Hyrum"
-	female = yes
 	dynasty = 990001
 	religion = canaanitism_pagan
 	culture = punic

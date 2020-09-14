@@ -1,0 +1,57 @@
+﻿######## Dido's Legacy - Innovations
+innovation_cothons = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = "gfx/interface/icons/culture_innovations/dl_innovation_cothon.dds"
+
+	potential = {
+		OR = {
+			#Canaanite
+			this = culture:punic
+			this = culture:phoenician
+			this = culture:rumiyim
+		}
+	}
+
+	custom = unlock_cothon_building
+
+	flag = global_regular
+	flag = tribal_era_regular
+}
+
+innovation_modern_cothons = {
+	group = culture_group_regional
+	culture_era = culture_era_early_medieval
+	icon = "gfx/interface/icons/culture_innovations/dl_innovation_cothon.dds"
+
+	potential = {
+		OR = {
+			#Canaanite
+			this = culture:punic
+			this = culture:phoenician
+			this = culture:rumiyim
+		}
+	}
+	
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+
+innovation_sacred_band = {
+	group = culture_group_regional
+	culture_era = culture_era_early_medieval
+	icon = "gfx/interface/icons/culture_innovations/dl_innovation_sacred_band.dds"
+
+	potential = {
+		OR = {
+			#Canaanite
+			this = culture:punic
+			this = culture:phoenician
+			this = culture:rumiyim
+		}
+	}
+
+	unlock_maa = sacred_band
+
+	flag = global_maa
+}

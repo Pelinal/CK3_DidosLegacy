@@ -1,4 +1,4 @@
-# Canarias
+﻿# Canarias
 849 = {	# 849 - Gran Canaria
 	
 	# Misc
@@ -66,11 +66,36 @@
 	
 	# Misc
 	culture = punic
-	#culture = sanhaja
+	religion = canaanitism_pagan
+
+	# History
+	
+	870.1.1 = { culture = baranis }
+	870.1.1 = { religion = ashari }
+}
+
+# 4678 - MELILLA
+4678 = {	# 4678 - MELILLA
+	
+	# Misc
+	culture = punic
 	religion = canaanitism_pagan
 	
 	# History
-	1066.1.1 = { religion = ashari }
+	
+	870.1.1 = { culture = baranis }
+	870.1.1 = { religion = ashari }
+
+}
+
+# 4678 - qalama
+4630 = {	# 4678 - qalama
+	
+	# Misc
+	culture = baranis
+	religion = ashari
+	
+	# History
 
 }
 

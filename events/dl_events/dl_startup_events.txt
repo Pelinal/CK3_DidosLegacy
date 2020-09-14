@@ -1,0 +1,29 @@
+﻿######################
+# DL Startup Events
+######################
+
+namespace = carthage
+carthage.32 = {
+	type = character_event
+	title = EVTNAME_carthage_startup
+	desc = EVTDESC_carthage_morrocco
+	
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	
+	option = { ### Needs updating, nothing happens in ck3
+		name = EVTOPTA_carthage_startup
+		add_prestige = 100
+		add_piety = 100
+		
+		add_unpressed_claim = d_tunis
+		add_unpressed_claim = c_tunis
+		add_unpressed_claim = c_tangiers
+		add_unpressed_claim = c_ceuta
+		
+		ai_chance = { factor = 100 }
+	}
+}

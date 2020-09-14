@@ -1,20 +1,35 @@
 ﻿######### Dido's Legacy Titles ##########
 
-#d_canaanitism_pagan_reformed = {
-#   color = { 190 130 185 }
-#   color2 = { 255 255 255 }
-#   
-#   #roman = "Collegium Punicus"
-#   
-#   definite_form = yes
-#   ruler_uses_title_name = no
-#   landless = yes
-#   no_automatic_claims = yes
-#   always_follows_primary_heir = yes
-#   destroy_if_invalid_heir = yes
-#	
-#	capital = c_tunis
-#}
+d_canaanitism_pagan_reformed = {
+   color = { 65 30 105 }
+   color2 = { 255 255 255 }
+   
+   #roman = "Collegium Punicus"
+   
+   definite_form = yes
+   ruler_uses_title_name = no
+   landless = yes
+   no_automatic_claims = yes
+   always_follows_primary_heir = yes
+   destroy_if_invalid_heir = yes
+	
+	capital = c_tunis
+}
+d_tyrianism_pagan_reformed = {
+   color = { 105 30 65 }
+   color2 = { 255 255 255 }
+   
+   #roman = "Collegium Punicus"
+   
+   definite_form = yes
+   ruler_uses_title_name = no
+   landless = yes
+   no_automatic_claims = yes
+   always_follows_primary_heir = yes
+   destroy_if_invalid_heir = yes
+	
+	capital = c_acre
+}
 
 k_carthage = {
 	color = { 170 140 200 }

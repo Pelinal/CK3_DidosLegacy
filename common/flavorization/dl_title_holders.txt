@@ -1,0 +1,347 @@
+﻿#############################################
+# DIDO'S LEGACY FLAVORISATION
+#############################################
+# Baron 7
+# Count 18
+# Duke 27
+# King 47
+# Emperor 102
+
+baron_theocracy_male_canaanite_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { canaanite_religion }
+}
+baron_theocracy_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { theocracy_government }
+	religions = { canaanite_religion }
+}
+barony_theocracy_canaanite_religion = {
+	type = title
+	tier = barony
+	top_liege = no
+	priority = 7
+	holding = church_holding
+	religions = { canaanite_religion }
+}
+count_theocracy_male_canaanite_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = yes
+	governments = { theocracy_government }
+	religions = { canaanite_religion }
+}
+count_theocracy_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = yes
+	governments = { theocracy_government }
+	religions = { canaanite_religion }
+}
+county_theocracy_canaanite_religion = {
+	type = title
+	tier = county
+	top_liege = yes
+	priority = 18
+	governments = { theocracy_government }
+	religions = { canaanite_religion }
+}
+duke_theocracy_male_canaanite_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 27
+	top_liege = yes
+	governments = { theocracy_government }
+	religions = { canaanite_religion }
+}
+duke_theocracy_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 27
+	top_liege = yes
+	governments = { theocracy_government }
+	religions = { canaanite_religion }
+}
+duchy_theocracy_canaanite_religion = {
+	type = title
+	tier = county
+	top_liege = yes
+	priority = 27
+	governments = { theocracy_government }
+	religions = { canaanite_religion }
+}
+###################################################### feudal
+baron_feudal_male_canaanite_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+baron_feudal_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+barony_feudal_canaanite_religion = {
+	type = character
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+count_feudal_male_canaanite_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+count_feudal_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+county_feudal_canaanite_religion = {
+	type = character
+	tier = county
+	priority = 18
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+duke_feudal_male_canaanite_religion = {
+	type = character
+	gender = male
+	tier = duchy
+	priority = 27
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+duke_feudal_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+duchy_feudal_canaanite_religion = {
+	type = character
+	tier = duchy
+	priority = 27
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+king_feudal_male_canaanite_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+king_feudal_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+kingdom_feudal_canaanite_religion = {
+	type = character
+	tier = kingdom
+	priority = 47
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+emperor_feudal_male_canaanite_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+emperor_feudal_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+empire_feudal_canaanite_religion = {
+	type = character
+	tier = empire
+	priority = 102
+	top_liege = yes
+	governments = { feudal_government }
+	religions = { canaanite_religion }
+}
+################################################ republic
+baron_republic_male_canaanite_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+baron_republic_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+barony_republic_canaanite_religion = {
+	type = character
+	tier = barony
+	priority = 7
+	top_liege = no
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+count_republic_male_canaanite_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = yes
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+count_republic_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	top_liege = yes
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+county_republic_canaanite_religion = {
+	type = character
+	tier = county
+	priority = 18
+	top_liege = yes
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+duke_republic_male_canaanite_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	top_liege = yes
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+duke_republic_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	top_liege = yes
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+duchy_republic_canaanite_religion = {
+	type = character
+	tier = duchy
+	priority = 27
+	top_liege = yes
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+king_republic_male_canaanite_religion = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	top_liege = yes
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+king_republic_female_canaanite_religion = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	top_liege = yes
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+kingdom_republic_canaanite_religion = {
+	type = character
+	tier = kingdom
+	priority = 47
+	top_liege = yes
+	governments = { republic_government }
+	religions = { canaanite_religion }
+}
+
