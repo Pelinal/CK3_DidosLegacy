@@ -1,0 +1,208 @@
+﻿restore_carthage_kingdom = {
+
+	#picture = "gfx/interface/illustrations/decisions/very_cool_picture.dds"
+	
+	title = restore_carthage_kingdom
+	desc = restore_carthage_kingdom_desc
+	selection_tooltip = restore_carthage_kingdom_tooltip
+	confirm_text = restore_carthage_kingdom_confirm
+	
+	major = yes
+	ai_check_interval = 120
+	
+	is_shown = {
+		OR = { 
+			faith = faith:canaanitism_pagan
+			#religion = canaanitism_pagan_reformed
+		}
+		#is_feudal = yes
+		culture = culture:punic
+		is_landed = yes
+		NOT = { has_title = title:k_carthage }
+	}
+		
+	is_valid = {
+		completely_controls = title:d_gabes
+		completely_controls = title:d_kairouan
+		completely_controls = title:d_tunis
+		completely_controls = title:d_kroumerie
+		completely_controls = title:d_bejaia
+		completely_controls = title:d_zab
+		completely_controls = title:d_alger	
+		is_at_war = no
+		piety >= 2000
+		prestige >= 2000	
+	}
+	
+	is_valid_showing_failures_only = {		
+		is_available_adult = yes
+	}	
+	
+	#ai_potential = {
+	#	completely_controls = d_gabes
+	#	completely_controls = d_kairouan
+	#	completely_controls = d_tunis
+	#	completely_controls = d_kroumieri
+	#	completely_controls = d_bejaija
+	#	completely_controls = d_zab
+	#	completely_controls = alger
+	#	NOT = { 
+	#		has_character_modifier = in_seclusion
+	#	}
+	#	war = no
+	#	has_wonder = wonder_carthage_harbour			
+	#}
+	
+	cost = { gold = 250 }
+	
+	effect = {
+		trigger_event = carthage.04
+		add_prestige = 1000
+		scope:actor= { get_title = title:k_carthage }
+	}
+	
+	ai_will_do = {
+		base = 1
+	}
+}
+
+restore_mediterranean_hegemony = {
+
+	#picture = "gfx/interface/illustrations/decisions/very_cool_picture.dds"
+	
+	title = restore_mediterranean_hegemony
+	desc = restore_mediterranean_hegemony_desc
+	selection_tooltip = restore_mediterranean_hegemony_tooltip
+	confirm_text = restore_mediterranean_hegemony_confirm
+	
+	major = yes
+	ai_check_interval = 120
+	
+	is_shown = {
+		has_culture_group = culture_group:canaanite_group
+		
+		is_landed = yes
+		is_independent_ruler = yes
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = carthage_trade_hegemony
+				target = flag:restore_mediterranean_hegemony
+			}
+		}
+	}
+	
+	is_valid = {
+		piety >= 1000
+		prestige >= 1000		
+		is_at_war = no
+	}
+	
+	
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+	
+	cost = { gold = 1000 }
+	
+	effect = {
+		trigger_event = carthage.25
+		custom_tooltip = carthage_de_jure_claims_tt			
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = carthage_trade_hegemony
+				target = flag:restore_mediterranean_hegemony
+			}
+			title:capital_scope = {
+				title:capital_holding = {
+					add_county_modifier = {
+						modifier = centre_of_mediterranean_trade
+					}
+				}
+			}
+			
+			#Set up de jure Carthage
+			title:d_gabes = { 
+				set_de_jure_liege_title = k_carthage
+			}
+			title:d_kairouan = { 
+				set_de_jure_liege_title = k_carthage
+			}
+			title:d_tunis = { 
+				set_de_jure_liege_title = k_carthage
+			}
+			title:d_kroumieri = { 
+				set_de_jure_liege_title = k_carthage
+			}
+			title:d_bejaija = { 
+				set_de_jure_liege_title = k_carthage
+			}
+			title:d_zab = { 
+				set_de_jure_liege_title = k_carthage
+			}
+			title:d_alger = { 
+				set_de_jure_liege_title = k_carthage
+			}				
+			
+			#Set up de jure Numidia
+			
+			#Set up de jure Mauretania
+		}
+	}
+	ai_will_do = {
+		base = 1
+	}
+}
+
+phoenician_renaissance_decision = {
+
+	ai_check_interval = 120
+	major = yes
+	
+	is_shown = {
+		has_culture_group = culture_group:canaanite_group
+		is_landed = yes
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = phoenicia_restored_culture
+				target = flag:phoenician_renaissance_decision
+			}
+		}		
+	}
+	
+	is_valid= {
+		prestige >= 1500
+		completely_controls = title:d_antioch
+		completely_controls = title:d_lebanon
+		completely_controls = title:c_acre
+		completely_controls = title:c_tiberias
+		completely_controls = title:c_baalbek
+		completely_controls = title:c_homs
+		completely_controls = title:c_shayzar
+	}
+	
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+	
+	effect = {
+		trigger_event = carthage.35
+		hidden_effect = {
+			771 = { culture = phoenician religion = ROOT }
+			770 = { culture = phoenician religion = ROOT }
+			772 = { culture = phoenician religion = ROOT }
+			add_to_global_variable_list = {
+				name = phoenicia_restored_culture
+				target = flag:phoenician_renaissance_decision
+			}
+		}
+		scope:actor = {
+			add_character_modifier = {
+				name = phoen_culture_revival
+				years = 10
+			}
+		}
+	}
+	ai_will_do = { 
+		base = 1 
+	}
+}
