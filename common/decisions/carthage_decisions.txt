@@ -1,6 +1,6 @@
 ﻿restore_carthage_kingdom = {
 
-	#picture = "gfx/interface/illustrations/decisions/very_cool_picture.dds"
+	picture = "gfx/interface/illustrations/decisions/restore_carthage_kingdom.dds"
 	
 	title = restore_carthage_kingdom
 	desc = restore_carthage_kingdom_desc
@@ -68,7 +68,7 @@
 
 restore_mediterranean_hegemony = {
 
-	#picture = "gfx/interface/illustrations/decisions/very_cool_picture.dds"
+	picture = "gfx/interface/illustrations/decisions/restore_mediterranean_hegemony.dds"
 	
 	title = restore_mediterranean_hegemony
 	desc = restore_mediterranean_hegemony_desc
@@ -154,7 +154,9 @@ restore_mediterranean_hegemony = {
 }
 
 phoenician_renaissance_decision = {
-
+	
+	picture = "gfx/interface/illustrations/decisions/phoenician_renaissance_decision.dds"
+	
 	ai_check_interval = 120
 	major = yes
 	
