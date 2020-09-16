@@ -6,6 +6,16 @@
  cn_qart_hadasht:0 "Qart-Hadasht"
  cn_siga:0 "Siga"
  cn_siga_adj:0 "Sigan"
+ cn_mauretania_caesariensis:0 "Mauretania Caesariensis"
+ cn_mauretania_caesariensis_adj:0 "East Mauretanian"
+ cn_mauretania_tingitana:0 "Mauretania"
+ cn_mauretania_tingitana_adj:0 "West Mauretanian"
+ cn_mauretania:0 "Mauretania"
+ cn_mauretania_adj:0 "Mauretanian"
+ cn_lybim:0 "Lybim"
+ cn_lybim_adj:0 "Lybian"
+ cn_shophtim:0 "Shophtim"
+ cn_shophtim_adj:0 "Shopti"
  
 # Title Localisation
  d_siga:0 "Siga"
@@ -22,5 +32,11 @@
  d_canaanitism_pagan_reformed_adj:0 "Punic"
  d_tyrianism_pagan_reformed:0 "Battê Allonim Surnim"
  d_tyrianism_pagan_reformed_adj:0 "Tyrian"
- 
-
+ e_carthage:0 "Carthage"
+ e_carthage_adj:0 "Carthaginian"
+ k_numidia:0 "Numidia"
+ k_numidia_adj:0 "Numidian"
+ k_lybia:0 "Lybia"
+ k_lybia_adj:0 "Lybian"
+ k_baetica:0 "Baetica"
+ k_baetica_adj:0 "Baetic"

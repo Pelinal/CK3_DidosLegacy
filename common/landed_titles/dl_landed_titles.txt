@@ -31,6 +31,20 @@ d_tyrianism_pagan_reformed = {
 	capital = c_acre
 }
 
+e_carthage = {
+	color = { 204 153 255 }
+	color2 = { 255 255 255 }
+
+	capital = c_tunis
+
+	cultural_names = {
+		roman = cn_carthago
+		rumiyim = cn_carthago
+		punic = cn_qart_hadasht
+		phoenician = cn_qart_hadasht
+	}
+}
+
 k_carthage = {
 	color = { 170 140 200 }
 	color2 = { 255 255 255 }
@@ -39,7 +53,45 @@ k_carthage = {
 
 	cultural_names = {
 		roman = cn_carthago
-		greek = cn_qart_hadasht
+		rumiyim = cn_carthago
+		punic = cn_qart_hadasht
+		phoenician = cn_qart_hadasht
+	}
+}
+k_numidia = {
+	color = { 92 56 70 }
+	color2 = { 255 255 255 }
+
+	capital = c_tunis
+
+	cultural_names = {
+		roman = cn_mauretania_caesariensis
+		rumiyim = cn_mauretania_caesariensis
+	}
+
+}
+k_lybia = {
+	color = { 82 88 70 }
+	color2 = { 255 255 255 }
+
+	capital = c_tripolitana
+
+	cultural_names = {
+		punic = cn_lybim
+		phoenician = cn_lybim
+		rumiyim = cn_lybim
+	}
+}
+k_baetica = {
+	color = { 210 235 87 }
+	color2 = { 255 255 255 }
+
+	capital = c_murcia
+
+	cultural_names = {
+		punic = cn_shophtim
+		phoenician = cn_shophtim
+		rumiyim = cn_shophtim
 	}
 }
 

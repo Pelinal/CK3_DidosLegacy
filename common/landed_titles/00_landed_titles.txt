@@ -51936,6 +51936,13 @@ e_maghreb = {
 			}
 		}
 		
+		cultural_names = {
+			roman = cn_mauretania_tingitana
+			rumiyim = cn_mauretania_tingitana
+			punic = cn_mauretania
+			phoenician = cn_mauretania
+		}
+		
 		d_marrakesh = {
 			color = { 161 29 14 }
 			color2 = { 255 255 255 }

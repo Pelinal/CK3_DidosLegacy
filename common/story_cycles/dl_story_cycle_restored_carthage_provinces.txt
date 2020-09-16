@@ -1,0 +1,41 @@
+﻿restoring_carthage_provinces_story = {
+
+	on_setup = {
+	}
+
+	on_end = {
+	}
+
+	on_owner_death = {
+	}
+
+	effect_group = {
+		days = 36 #Checked every 365 days
+		
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					NOT = {
+						completely_controls = title:d_sicily # Iyakonia
+						completely_controls = title:d_mallorca # Balearides
+						completely_controls = title:d_murcia # Nova Carthago/ Ishfania Hadasht
+						completely_controls = title:d_sardinia # Malciya
+						completely_controls = title:d_rif # Tingitana
+						completely_controls = title:d_tripolitania # Libyim
+					}
+					OR = {
+						has_title = title:k_carthage
+						has_title = title:e_carthage
+					}
+				}
+			}
+			effect = {
+				story_owner = {
+					trigger_event = {
+						on_action = on_action_roman_restoration_pulse
+					}
+				}
+			}
+		}
+	}
+}

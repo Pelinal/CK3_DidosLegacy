@@ -1,0 +1,21 @@
+namespace = carthage
+##=== RESTORE KINGDOM OF CARTHAGE ===##
+narrative_event = {
+	id = carthage.04
+	title = EVTNAME_carthage_04
+	border = GFX_event_narrative_frame_war
+	desc = EVTDESC_carthage_04
+	picture = GFX_evt_carthage_restore
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_carthage_04
+		piety = 250
+		prestige = 100
+	}
+	option = {
+		name = EVTOPTB_carthage_04
+		piety = 100
+		prestige = 250
+	}
+}

@@ -13,7 +13,7 @@
 	is_shown = {
 		OR = { 
 			faith = faith:canaanitism_pagan
-			#religion = canaanitism_pagan_reformed
+			faith = faith:tyrianism_pagan
 		}
 		#is_feudal = yes
 		culture = culture:punic
@@ -30,35 +30,64 @@
 		completely_controls = title:d_zab
 		completely_controls = title:d_alger	
 		is_at_war = no
-		piety >= 2000
-		prestige >= 2000	
+		
+		prestige >= 2500
 	}
 	
 	is_valid_showing_failures_only = {		
 		is_available_adult = yes
-	}	
-	
-	#ai_potential = {
-	#	completely_controls = d_gabes
-	#	completely_controls = d_kairouan
-	#	completely_controls = d_tunis
-	#	completely_controls = d_kroumieri
-	#	completely_controls = d_bejaija
-	#	completely_controls = d_zab
-	#	completely_controls = alger
-	#	NOT = { 
-	#		has_character_modifier = in_seclusion
-	#	}
-	#	war = no
-	#	has_wonder = wonder_carthage_harbour			
-	#}
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
 	
 	cost = { gold = 250 }
 	
 	effect = {
 		trigger_event = carthage.04
-		add_prestige = 1000
-		scope:actor= { get_title = title:k_carthage }
+		title:k_carthage = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+		every_held_title = { #Should destroy all other Kingdoms owned at the time.
+			limit = {
+				tier = tier_kingdom
+				NOT = { this = title:k_carthage }
+			}
+			root = { destroy_title = prev }
+		}
+		
+		if = { #Automatically move capital to Tunis, unless it's been set.
+			limit = {
+				NOT = { capital_county = { this = title:c_tunis } }
+				has_culture_group = culture_group:canaanite_group
+			}
+			hidden_effect = {
+				if = { #Usurp if not held personally.
+					limit = {
+						NOT = { this = title:c_tunis.holder }
+					}
+					create_title_and_vassal_change = change
+					scope:change = {
+						set_title_and_vassal_change_type = returned
+					}
+					title:c_tunis = {
+						change_title_holder = {
+							holder = root
+							change = scope:change
+						}
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			title:e_roman_empire.holder = { set_realm_capital = title:c_tunis }
+		}
+		
+		hidden_effect = {
+		create_story = restoring_carthage_provinces_story
+			add_character_flag = flag_restorer_of_carthage #used for Eulogy.
+		}
 	}
 	
 	ai_will_do = {
@@ -141,11 +170,89 @@ restore_mediterranean_hegemony = {
 			}
 			title:d_alger = { 
 				set_de_jure_liege_title = k_carthage
-			}				
+			}	
 			
 			#Set up de jure Numidia
+			title:d_tahert = { 
+				set_de_jure_liege_title = k_numidia
+			}
+			title:d_mzab = { 
+				set_de_jure_liege_title = k_numidia
+			}
+			title:d_jerid = { 
+				set_de_jure_liege_title = k_numidia
+			}
 			
 			#Set up de jure Mauretania
+			
+			title:d_tlemcen = { 
+				set_de_jure_liege_title = k_maghreb
+			}
+			
+			#Set up de jure Lybia
+			
+			title:d_tripolitania = { 
+				set_de_jure_liege_title = k_lybia
+			}
+			title:d_syrte = { 
+				set_de_jure_liege_title = k_lybia
+			}
+			title:d_fezzan = { 
+				set_de_jure_liege_title = k_lybia
+			}
+			title:c_djanet = { 
+				set_de_jure_liege_title = d_tadmekka
+			}
+			title:d_zab = { 
+				set_de_jure_liege_title = k_lybia
+			}
+			title:d_alger = { 
+				set_de_jure_liege_title = k_lybia
+			}
+			
+			#Set up de jure Baetica
+			
+			title:d_sevilla = { 
+				set_de_jure_liege_title = k_baetica
+			}
+			title:d_cordoba = { 
+				set_de_jure_liege_title = k_baetica
+			}
+			title:d_granada = { 
+				set_de_jure_liege_title = k_baetica
+			}
+			title:d_murcia = { 
+				set_de_jure_liege_title = k_baetica
+			}
+			title:d_valencia = { 
+				set_de_jure_liege_title = k_baetica
+			}
+			title:d_mallorca = { 
+				set_de_jure_liege_title = k_baetica
+			}
+			title:d_aragon = { 
+				set_de_jure_liege_title = k_andalusia
+			}
+			
+			#Set up de jure empire
+			title:k_baetica = { 
+				set_de_jure_liege_title = e_carthage
+			}
+			title:k_carthage = { 
+				set_de_jure_liege_title = e_carthage
+			}
+			title:k_baetica = { 
+				set_de_jure_liege_title = e_carthage
+			}
+			title:k_lybia = { 
+				set_de_jure_liege_title = e_carthage
+			}
+			title:k_numidia = { 
+				set_de_jure_liege_title = e_carthage
+			}
+			title:k_maghreb = { 
+				set_de_jure_liege_title = e_carthage
+			}
 		}
 	}
 	ai_will_do = {
