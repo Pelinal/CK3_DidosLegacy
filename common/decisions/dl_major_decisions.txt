@@ -22,6 +22,7 @@
 	}
 		
 	is_valid = {
+		prestige >= 2500
 		completely_controls = title:d_gabes
 		completely_controls = title:d_kairouan
 		completely_controls = title:d_tunis
@@ -30,8 +31,6 @@
 		completely_controls = title:d_zab
 		completely_controls = title:d_alger	
 		is_at_war = no
-		
-		prestige >= 2500
 	}
 	
 	is_valid_showing_failures_only = {		
@@ -43,22 +42,29 @@
 	cost = { gold = 250 }
 	
 	effect = {
-		trigger_event = carthage.04
+		#Create Carthage, shift dejure/history/laws, destroy other kingdoms.
+
+		create_title_and_vassal_change = change
+		scope:change = {
+			set_title_and_vassal_change_type = created
+		}
 		title:k_carthage = {
 			change_title_holder = {
 				holder = root
 				change = scope:change
 			}
+			#copy_title_history = title:e_byzantium
 		}
-		every_held_title = { #Should destroy all other Kingdoms owned at the time.
+		resolve_title_and_vassal_change = scope:change
+		hidden_effect = { set_primary_title_to = title:k_carthage }
+		every_held_title = { #Should destroy all other kingdoms owned at the time.
 			limit = {
-				tier = tier_kingdom
+					tier = tier_kingdom
 				NOT = { this = title:k_carthage }
 			}
 			root = { destroy_title = prev }
 		}
-		
-		if = { #Automatically move capital to Tunis, unless it's been set.
+		if = { #Automatically move capital to Tunis, unless it's been set to Rome.
 			limit = {
 				NOT = { capital_county = { this = title:c_tunis } }
 				has_culture_group = culture_group:canaanite_group
@@ -81,13 +87,40 @@
 					resolve_title_and_vassal_change = scope:change
 				}
 			}
-			title:e_roman_empire.holder = { set_realm_capital = title:c_tunis }
+			title:k_carthage.holder = { set_realm_capital = title:c_tunis }
+		}
+		else_if = {
+			limit = {
+				NOT = { capital_county = { this = title:c_tunis } }
+				NOT = { has_culture_group = culture_group:canaanite_group }
+				exists = title:k_carthage.holder
+			}
+			hidden_effect = {
+				if = { #Usurp if not held personally.
+					limit = {
+						NOT = { this = title:c_tunis.holder }
+					}
+					create_title_and_vassal_change = change
+					scope:change = {
+						set_title_and_vassal_change_type = returned
+					}
+					title:c_tunis = {
+						change_title_holder = {
+							holder = root
+							change = scope:change
+						}
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			title:k_carthage.holder = { set_realm_capital = title:c_tunis }
 		}
 		
 		hidden_effect = {
-		create_story = restoring_carthage_provinces_story
+			create_story = restoring_carthage_provinces_story
 			add_character_flag = flag_restorer_of_carthage #used for Eulogy.
 		}
+		trigger_event = carthage.04
 	}
 	
 	ai_will_do = {
@@ -123,12 +156,19 @@ restore_mediterranean_hegemony = {
 	is_valid = {
 		piety >= 1000
 		prestige >= 1000		
+		completely_controls = title:c_tunis
+		completely_controls = title:c_algier
+		completely_controls = title:c_tangiers
+		completely_controls = title:c_murcia
+		completely_controls = title:c_cagliari
 		is_at_war = no
 	}
 	
 	
 	is_valid_showing_failures_only = {
 		is_available_adult = yes
+		is_imprisoned = no
+		is_independent = yes
 	}
 	
 	cost = { gold = 1000 }
@@ -150,108 +190,102 @@ restore_mediterranean_hegemony = {
 			}
 			
 			#Set up de jure Carthage
-			title:d_gabes = { 
-				set_de_jure_liege_title = k_carthage
+			title:d_gabes = {
+				set_de_jure_liege_title = title:k_carthage
 			}
-			title:d_kairouan = { 
-				set_de_jure_liege_title = k_carthage
+			title:d_kairouan = {
+				set_de_jure_liege_title = title:k_carthage
 			}
-			title:d_tunis = { 
-				set_de_jure_liege_title = k_carthage
+			title:d_tunis = {
+				set_de_jure_liege_title = title:k_carthage
 			}
-			title:d_kroumieri = { 
-				set_de_jure_liege_title = k_carthage
+			title:d_kroumerie = {
+				set_de_jure_liege_title = title:k_carthage
 			}
-			title:d_bejaija = { 
-				set_de_jure_liege_title = k_carthage
+			title:d_bejaia = {
+				set_de_jure_liege_title = title:k_carthage
 			}
-			title:d_zab = { 
-				set_de_jure_liege_title = k_carthage
+			title:d_zab = {
+				set_de_jure_liege_title = title:k_carthage
 			}
-			title:d_alger = { 
-				set_de_jure_liege_title = k_carthage
-			}	
+			title:d_alger = {
+				set_de_jure_liege_title = title:k_carthage
+			}
 			
 			#Set up de jure Numidia
 			title:d_tahert = { 
-				set_de_jure_liege_title = k_numidia
+				set_de_jure_liege_title = title:k_numidia
 			}
 			title:d_mzab = { 
-				set_de_jure_liege_title = k_numidia
+				set_de_jure_liege_title = title:k_numidia
 			}
 			title:d_jerid = { 
-				set_de_jure_liege_title = k_numidia
+				set_de_jure_liege_title = title:k_numidia
 			}
 			
 			#Set up de jure Mauretania
 			
 			title:d_tlemcen = { 
-				set_de_jure_liege_title = k_maghreb
+				set_de_jure_liege_title = title:k_maghreb
 			}
 			
 			#Set up de jure Lybia
 			
 			title:d_tripolitania = { 
-				set_de_jure_liege_title = k_lybia
+				set_de_jure_liege_title = title:k_lybia
 			}
 			title:d_syrte = { 
-				set_de_jure_liege_title = k_lybia
+				set_de_jure_liege_title = title:k_lybia
 			}
 			title:d_fezzan = { 
-				set_de_jure_liege_title = k_lybia
+				set_de_jure_liege_title = title:k_lybia
 			}
 			title:c_djanet = { 
-				set_de_jure_liege_title = d_tadmekka
-			}
-			title:d_zab = { 
-				set_de_jure_liege_title = k_lybia
-			}
-			title:d_alger = { 
-				set_de_jure_liege_title = k_lybia
+				set_de_jure_liege_title = title:d_tadmekka
 			}
 			
 			#Set up de jure Baetica
 			
 			title:d_sevilla = { 
-				set_de_jure_liege_title = k_baetica
+				set_de_jure_liege_title = title:k_baetica
 			}
 			title:d_cordoba = { 
-				set_de_jure_liege_title = k_baetica
+				set_de_jure_liege_title = title:k_baetica
 			}
 			title:d_granada = { 
-				set_de_jure_liege_title = k_baetica
+				set_de_jure_liege_title = title:k_baetica
 			}
 			title:d_murcia = { 
-				set_de_jure_liege_title = k_baetica
+				set_de_jure_liege_title = title:k_baetica
 			}
 			title:d_valencia = { 
-				set_de_jure_liege_title = k_baetica
+				set_de_jure_liege_title = title:k_baetica
 			}
 			title:d_mallorca = { 
-				set_de_jure_liege_title = k_baetica
+				set_de_jure_liege_title = title:k_baetica
 			}
 			title:d_aragon = { 
-				set_de_jure_liege_title = k_andalusia
+				set_de_jure_liege_title = title:k_andalusia
 			}
 			
 			#Set up de jure empire
 			title:k_baetica = { 
-				set_de_jure_liege_title = e_carthage
+				set_de_jure_liege_title = title:e_carthage
 			}
 			title:k_carthage = { 
-				set_de_jure_liege_title = e_carthage
+				set_de_jure_liege_title = title:e_carthage
 			}
 			title:k_baetica = { 
-				set_de_jure_liege_title = e_carthage
+				set_de_jure_liege_title = title:e_carthage
 			}
 			title:k_lybia = { 
-				set_de_jure_liege_title = e_carthage
+				set_de_jure_liege_title = title:e_carthage
 			}
 			title:k_numidia = { 
-				set_de_jure_liege_title = e_carthage
+				set_de_jure_liege_title = title:e_carthage
 			}
 			title:k_maghreb = { 
-				set_de_jure_liege_title = e_carthage
+				set_de_jure_liege_title = title:e_carthage
 			}
 		}
 	}
@@ -296,9 +330,9 @@ phoenician_renaissance_decision = {
 	effect = {
 		trigger_event = carthage.35
 		hidden_effect = {
-			771 = { culture = phoenician religion = ROOT }
-			770 = { culture = phoenician religion = ROOT }
-			772 = { culture = phoenician religion = ROOT }
+			771 = { culture = culture:phoenician faith = faith:root }
+			770 = { culture = culture:phoenician faith = faith:root }
+			772 = { culture = culture:phoenician faith = faith:root }
 			add_to_global_variable_list = {
 				name = phoenicia_restored_culture
 				target = flag:phoenician_renaissance_decision
