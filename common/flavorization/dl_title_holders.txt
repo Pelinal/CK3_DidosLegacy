@@ -63,7 +63,7 @@ county_theocracy_canaanite_religion = {
 	tier = county
 	top_liege = no
 	priority = 18
-	holding = church_holding
+	governments = { theocracy_government }
 	religions = { canaanite_religion }
 }
 duke_theocracy_male_canaanite_religion = {

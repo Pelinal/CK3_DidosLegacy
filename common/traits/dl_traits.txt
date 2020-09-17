@@ -1,0 +1,19 @@
+﻿
+suffete = {
+	index = 800
+	
+	vassal_opinion = 10
+	monthly_prestige = 0.5
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_augustus_desc
+			}
+			desc = trait_augustus_character_desc
+		}
+	}
+}

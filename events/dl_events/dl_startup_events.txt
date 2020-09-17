@@ -14,7 +14,7 @@ carthage.32 = {
 		animation = personality_honorable
 	}
 	
-	option = { ### Needs updating, nothing happens in ck3
+	option = {
 		name = EVTOPTA_carthage_startup
 		add_prestige = 100
 		add_piety = 100

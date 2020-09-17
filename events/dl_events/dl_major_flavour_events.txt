@@ -1,21 +1,28 @@
 namespace = carthage
 ##=== RESTORE KINGDOM OF CARTHAGE ===##
-narrative_event = {
-	id = carthage.04
+carthage.04 = {
 	title = EVTNAME_carthage_04
-	border = GFX_event_narrative_frame_war
 	desc = EVTDESC_carthage_04
 	picture = GFX_evt_carthage_restore
-	is_triggered_only = yes
+	
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
 	
 	option = {
-		name = EVTOPTA_carthage_04
-		piety = 250
-		prestige = 100
+		name = EVTOPTA_carthage_04 # For House dynn_name!
+		add_prestige = 100
+		add_trait = "suffete"
 	}
 	option = {
-		name = EVTOPTB_carthage_04
-		piety = 100
-		prestige = 250
+		name = EVTOPTB_carthage_04 # For Baal Hammon!
+		add_piety = 100
+		add_trait = "suffete"
 	}
 }
