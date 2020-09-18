@@ -62,3 +62,19 @@ punic0004 = {
 		death = yes
 	}
 }
+punic0005 = {
+	name = "Hasdrubal"
+	dynasty = 990000
+	religion = canaanitism_pagan
+	culture = punic
+	intrigue = 6
+	trait = "intrigue_stewardship_3"
+	
+	838.1.1 = {
+		birth = yes
+	}
+	1010.1.1 = {
+		death = yes
+	}
+
+}
