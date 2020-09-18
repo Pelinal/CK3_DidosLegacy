@@ -175,117 +175,11 @@ restore_mediterranean_hegemony = {
 	
 	effect = {
 		trigger_event = carthage.25
-		custom_tooltip = carthage_de_jure_claims_tt			
+		custom_tooltip = carthage_de_jure_claims_tt	
 		hidden_effect = {
 			add_to_global_variable_list = {
 				name = carthage_trade_hegemony
 				target = flag:restore_mediterranean_hegemony
-			}
-			title:capital_scope = {
-				title:capital_holding = {
-					add_county_modifier = {
-						modifier = centre_of_mediterranean_trade
-					}
-				}
-			}
-			
-			#Set up de jure Carthage
-			title:d_gabes = {
-				set_de_jure_liege_title = title:k_carthage
-			}
-			title:d_kairouan = {
-				set_de_jure_liege_title = title:k_carthage
-			}
-			title:d_tunis = {
-				set_de_jure_liege_title = title:k_carthage
-			}
-			title:d_kroumerie = {
-				set_de_jure_liege_title = title:k_carthage
-			}
-			title:d_bejaia = {
-				set_de_jure_liege_title = title:k_carthage
-			}
-			title:d_zab = {
-				set_de_jure_liege_title = title:k_carthage
-			}
-			title:d_alger = {
-				set_de_jure_liege_title = title:k_carthage
-			}
-			
-			#Set up de jure Numidia
-			title:d_tahert = { 
-				set_de_jure_liege_title = title:k_numidia
-			}
-			title:d_mzab = { 
-				set_de_jure_liege_title = title:k_numidia
-			}
-			title:d_jerid = { 
-				set_de_jure_liege_title = title:k_numidia
-			}
-			
-			#Set up de jure Mauretania
-			
-			title:d_tlemcen = { 
-				set_de_jure_liege_title = title:k_maghreb
-			}
-			
-			#Set up de jure Lybia
-			
-			title:d_tripolitania = { 
-				set_de_jure_liege_title = title:k_lybia
-			}
-			title:d_syrte = { 
-				set_de_jure_liege_title = title:k_lybia
-			}
-			title:d_fezzan = { 
-				set_de_jure_liege_title = title:k_lybia
-			}
-			title:c_djanet = { 
-				set_de_jure_liege_title = title:d_tadmekka
-			}
-			
-			#Set up de jure Baetica
-			
-			title:d_sevilla = { 
-				set_de_jure_liege_title = title:k_baetica
-			}
-			title:d_cordoba = { 
-				set_de_jure_liege_title = title:k_baetica
-			}
-			title:d_granada = { 
-				set_de_jure_liege_title = title:k_baetica
-			}
-			title:d_murcia = { 
-				set_de_jure_liege_title = title:k_baetica
-			}
-			title:d_valencia = { 
-				set_de_jure_liege_title = title:k_baetica
-			}
-			title:d_mallorca = { 
-				set_de_jure_liege_title = title:k_baetica
-			}
-			title:d_aragon = { 
-				set_de_jure_liege_title = title:k_andalusia
-			}
-			
-			#Set up de jure empire
-			title:k_baetica = { 
-				set_de_jure_liege_title = title:e_carthage
-			}
-			title:k_carthage = { 
-				set_de_jure_liege_title = title:e_carthage
-			}
-			title:k_baetica = { 
-				set_de_jure_liege_title = title:e_carthage
-			}
-			title:k_lybia = { 
-				set_de_jure_liege_title = title:e_carthage
-			}
-			title:k_numidia = { 
-				set_de_jure_liege_title = title:e_carthage
-			}
-			title:k_maghreb = { 
-				set_de_jure_liege_title = title:e_carthage
 			}
 		}
 	}
@@ -528,7 +422,7 @@ form_the_tanitguard = {
 	
 	is_shown = {
 		NOT = { is_title_active = d_tanitguard }
-		faith = faith:canaanitism_pagan_reformed
+		faith = faith:tyrianism_pagan
 		is_landed = yes
 		is_independent_ruler = yes
 	}
@@ -674,7 +568,7 @@ astarte_temple_female = {
 		is_adult = yes
 		OR = {
 			faith = faith:canaanitism_pagan
-			faith = faith:canaanitism_pagan_reformed
+			faith = faith:tyrianism_pagan
 		}
 		NOR = {
 			has_character_modifier = failed_duty_to_astarte
@@ -729,7 +623,7 @@ astarte_temple_male = {
 		is_adult = yes
 		OR = {
 			faith = faith:canaanitism_pagan
-			faith = faith:canaanitism_pagan_reformed
+			faith = faith:tyrianism_pagan
 		}
 		NOR = {
 			has_character_modifier = failed_duty_to_astarte
@@ -785,7 +679,7 @@ hold_a_dabke = {
 		is_imprisoned = no
 		OR = {
 			faith = faith:canaanitism_pagan
-			faith = faith:canaanitism_pagan_reformed			
+			faith = faith:tyrianism_pagan			
 		}
 		NOR = {
 			has_character_modifier = dabke_ball_timer
@@ -872,7 +766,7 @@ mayumas_festival = {
 		#is_playable = yes
 		OR = {
 			faith = faith:canaanitism_pagan
-			faith = faith:canaanitism_pagan_reformed			
+			faith = faith:tyrianism_pagan			
 		}
 		NOT = {
 			has_character_modifier = holding_mayumas_festival

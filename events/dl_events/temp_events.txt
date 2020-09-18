@@ -1,0 +1,125 @@
+carthage.25= {
+	type = character_event
+    desc = EVTDESC_carthage_25
+	title = EVTNAME_carthage_25
+    
+	theme = stewardship
+	left_portrait = {
+		character = root
+		animation = ecstasy
+	}
+	
+	immediate = {
+		custom_tooltip = mediterranean_hegemony_de_jure_change_tt
+		hidden_effect = {
+			#Set up de jure Carthage
+			title:d_gabes = {
+				set_de_jure_liege_title = title:k_carthage
+			}
+			title:d_kairouan = {
+				set_de_jure_liege_title = title:k_carthage
+			}
+			title:d_tunis = {
+				set_de_jure_liege_title = title:k_carthage
+			}
+			title:d_kroumerie = {
+				set_de_jure_liege_title = title:k_carthage
+			}
+			title:d_bejaia = {
+				set_de_jure_liege_title = title:k_carthage
+			}
+			title:d_zab = {
+				set_de_jure_liege_title = title:k_carthage
+			}
+			title:d_alger = {
+				set_de_jure_liege_title = title:k_carthage
+			}
+			
+			#Set up de jure Numidia
+			title:d_tahert = { 
+				set_de_jure_liege_title = title:k_numidia
+			}
+			title:d_mzab = { 
+				set_de_jure_liege_title = title:k_numidia
+			}
+			title:d_jerid = { 
+				set_de_jure_liege_title = title:k_numidia
+			}
+			
+			#Set up de jure Mauretania
+			
+			title:d_tlemcen = { 
+				set_de_jure_liege_title = title:k_maghreb
+			}
+			
+			#Set up de jure Lybia
+			
+			title:d_tripolitania = { 
+				set_de_jure_liege_title = title:k_lybia
+			}
+			title:d_syrte = { 
+				set_de_jure_liege_title = title:k_lybia
+			}
+			title:d_fezzan = { 
+				set_de_jure_liege_title = title:k_lybia
+			}
+			title:c_djanet = { 
+				set_de_jure_liege_title = title:d_tadmekka
+			}
+			
+			#Set up de jure Baetica
+			
+			title:d_sevilla = { 
+				set_de_jure_liege_title = title:k_baetica
+			}
+			title:d_cordoba = { 
+				set_de_jure_liege_title = title:k_baetica
+			}
+			title:d_granada = { 
+				set_de_jure_liege_title = title:k_baetica
+			}
+			title:d_murcia = { 
+				set_de_jure_liege_title = title:k_baetica
+			}
+			title:d_valencia = { 
+				set_de_jure_liege_title = title:k_baetica
+			}
+			title:d_mallorca = { 
+				set_de_jure_liege_title = title:k_baetica
+			}
+			title:d_aragon = { 
+				set_de_jure_liege_title = title:k_andalusia
+			}
+			
+			#Set up de jure empire
+			title:k_baetica = { 
+				set_de_jure_liege_title = title:e_carthage
+			}
+			title:k_carthage = { 
+				set_de_jure_liege_title = title:e_carthage
+			}
+			title:k_baetica = { 
+				set_de_jure_liege_title = title:e_carthage
+			}
+			title:k_lybia = { 
+				set_de_jure_liege_title = title:e_carthage
+			}
+			title:k_numidia = { 
+				set_de_jure_liege_title = title:e_carthage
+			}
+			title:k_maghreb = { 
+				set_de_jure_liege_title = title:e_carthage
+			}
+		}
+	}
+    
+    option = {
+        name = EVTOPTA_carthage_25		
+        custom_tooltip = { text= trade_hegemon_tt }
+		title:capital_scope = {
+			add_county_modifier = {
+				modifier = centre_of_mediterranean_trade
+			}
+		}		
+    }
+}
