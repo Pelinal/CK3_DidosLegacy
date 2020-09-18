@@ -50,7 +50,7 @@ punic0004 = {
 	religion = canaanitism_pagan
 	culture = punic
 	father = punic0003
-	dna = "M+wz7LKSspI1+jX6AHQAdAGHAYcAdgB2AHoAegB5AHkAfQB9AYwBjABzAHMAaABoAGYAZgGEAYQAeAB4AEwATAGgAaAAZABkAFMAUwGJAYkBoQGhAGsAawB8AHwAdQB1AYQBhAB+AH4BhgGGAHcAdwB7AHsBhwGHAbIBsgHHAccAKgAqAZkBmQBmAGYAjQCNADEAMQEqASoBLgEuACYAJgFwAXAAEgASAQYBBgAJAAkBKgEqAF0AXQFXAVcAigCKABEAEQAOAA4BCwELACUAJQAXABcAFAAUABkAGQArACsBFwEXACQAJAEuAS4BHQEdAAYABgEBAQEBVAFUAFwAXAEmASYBfAF8AXsBewAVABUBcgFyAXUBdQEkASQBgwGDAWkBaQAXABcAFwAXADMAMwBfAF8EMwQzARcBFwATABMA2gDaAqUCpQGPAY8AgACAABcAFwA3ADcAWQBZAKMAowGfAZ8AfwB/BPUE9QGHAYcBlwGXCiYKJgmZCZkCuQK5Ae4B7gOOA44CwQLBA7EDsQQJBAkABgAGAAAAAAHhAeE="
+	dna = "gisgo_dna"
 	stewardship = 8
 	trait = "education_stewardship_3"
 	trait = "zealous"
@@ -67,6 +67,7 @@ punic0005 = {
 	dynasty = 990000
 	religion = canaanitism_pagan
 	culture = punic
+	dna = "hasdrubal_dna"
 	intrigue = 6
 	trait = "intrigue_stewardship_3"
 	
