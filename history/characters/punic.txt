@@ -69,13 +69,47 @@ punic0005 = {
 	culture = punic
 	dna = "hasdrubal_dna"
 	intrigue = 6
-	trait = "intrigue_stewardship_3"
+	trait = "education_intrigue_3"
 	
 	838.1.1 = {
 		birth = yes
 	}
-	1010.1.1 = {
+	910.1.1 = {
 		death = yes
 	}
-
+}
+punic0006 = {
+	name = "Ahirom"
+	dynasty = 990002
+	religion = muwalladi
+	culture = punic
+	dna = "ahirom_dna"
+	
+	798.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+punic0007 = {
+	name = "Hanno"
+	dynasty = 990002
+	religion = canaanitism_pagan
+	culture = punic
+	dna = "hanno_dna"
+	father = punic0006
+	stewardship = 6
+	martial = 8
+	intrigue = 6
+	learning = 2
+	diplomacy = 4
+	trait = "education_martial_4"
+	
+	844.1.1 = {
+		birth = yes
+	}
+	909.1.1 = {
+		death = yes
+	}
 }
