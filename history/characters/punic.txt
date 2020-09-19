@@ -113,3 +113,32 @@ punic0007 = {
 		death = yes
 	}
 }
+
+easter0001 = {
+	name = "Pelinal"
+	dynasty = 999998
+	religion = catholic
+	culture = anglo_saxon
+	dna = "pelinal_dna"
+	
+	849.1.1 = {
+		birth = yes
+	}
+	919.1.1 = {
+		death = yes
+	}
+}
+easter0002 = {
+	name = "Mullac"
+	dynasty = 999999
+	religion = catholic
+	culture = anglo_saxon
+	dna = "mullac_dna"
+	
+	849.1.1 = {
+		birth = yes
+	}
+	919.1.1 = {
+		death = yes
+	}
+}

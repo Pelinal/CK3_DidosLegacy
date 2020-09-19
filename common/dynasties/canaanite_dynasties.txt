@@ -729,3 +729,11 @@
 	
 	forced_coa_culture = culture:group="christian"
 }
+999998 = {
+	name="dynn_Whitestrake"
+	culture = culture:anglo_saxon
+}
+999999 = {
+	name="dynn_Raglla"
+	culture = culture:anglo_saxon
+}
