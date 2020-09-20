@@ -1,5 +1,12 @@
-﻿ l_english:
-    EVTNAME_carthage_04:0 "Ad Kalendas Graecas"
-    EVTDESC_carthage_04:0 "After centuries of lying dormant under the cruelty of the Roman Empire, you, [ROOT.Char] have reconquered all that was lost. The great port of Carthage has been restored to a splitting image of the original, with trade that will flow to all corners of the globe. This great kingdom shall stand to prove that the Carthaginian people shall never be truly beaten.\nMay the kingdom stand for centuries to come!"
-    EVTOPTA_carthage_04:0 "For the glory of the [ROOT.Char.Dynasty] family!"
-    EVTOPTB_carthage_04:0 "I do this for Baal Hammon!"
+﻿l_english:
+ EVTNAME_carthage_04:0 "Carthago Restaurata Est"
+ EVTDESC_carthage_04:0 "After centuries of lying dormant under the cruelty of the Roman Empire, you, [ROOT.Char.GetTitledFirstName] have reconquered all that was lost. The great port of Carthage has been restored to a splitting image of the original, with trade that will flow to all corners of the globe. This great kingdom shall stand to prove that the Carthaginian people shall never be truly beaten.\n\nMay the kingdom stand for centuries to come!"
+ EVTOPTA_carthage_04:0 "For the glory of House [ROOT.Char.GetHouse.GetBaseName]!"
+ EVTOPTB_carthage_04:0 "I do this for [ROOT.Char.GetFaith.HighGodName]!"
+ EVTNAME_carthage_25:0 "Sahkar Hegmonya"
+ EVTDESC_carthage_25:0 "Under your gracious leadership, the merchants of [ROOT.Char.GetPrimaryTitle.GetBaseName] rejoyce! For it is because of you that they now enjoy a unquestioned monopoly on Mediterranean markets.\n\n This newfound power is sure to grant the mercantile people of [ROOT.Char.GetPrimaryTitle.GetBaseName] more opportunities in future. This is a glorious day for your realm!"
+ EVTOPTA_carthage_25:0 "To greater goals and finer things!"
+ EVTNAME_carthage_35:0 "The Land of Canaan"
+ EVTDESC_carthage_35:0 "History has just been made in the Levant.\n\nThe thought extinct Phoenician culture has been recovered, and its people are beginning to re-inhabit their ancestral homeland of Canaan. It will take a long time but eventually the true people of the Levant will come to dominate it once more...\n\nAll this was possible due to the efforts of [FROM.Char.GetTitledFirstName], [FROM.Char.GetSheHe] will surely be remembered as a hero of the Old Semitic peoples."
+ EVTOPTA_carthage_35:0 "The culture of our ancestors is reborn!"
+ EVTOPTB_carthage_35:0 "Why do I care, exactly?"

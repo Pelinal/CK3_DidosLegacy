@@ -6,7 +6,82 @@
 # Duke 38                     #
 # King 48                     #
 # Emperor 103                 #
+# Councillor 299              #
 ###############################
+
+# Special #
+
+councillor_court_chaplain_canaanite_religion_county = {
+	type = character
+	gender = male
+	special = councillor
+	tier = county
+	priority = 300
+	council_position = councillor_court_chaplain
+}
+
+councillor_court_chaplain_canaanite_religion_county_female = {
+	type = character
+	gender = female
+	special = councillor
+	tier = county
+	priority = 300
+	council_position = councillor_court_chaplain
+}
+
+councillor_court_chaplain_canaanite_religion_duchy = {
+	type = character
+	gender = male
+	special = councillor
+	tier = duchy
+	priority = 300
+	council_position = councillor_court_chaplain
+}
+
+councillor_court_chaplain_canaanite_religion_duchy_female = {
+	type = character
+	gender = female
+	special = councillor
+	tier = duchy
+	priority = 300
+	council_position = councillor_court_chaplain
+}
+
+councillor_court_chaplain_canaanite_religion_kingdom = {
+	type = character
+	gender = male
+	special = councillor
+	tier = duchy
+	priority = 300
+	council_position = councillor_court_chaplain
+}
+
+councillor_court_chaplain_canaanite_religion_kingdom_female = {
+	type = character
+	gender = duchy
+	special = councillor
+	tier = county
+	priority = 300
+	council_position = councillor_court_chaplain
+}
+
+councillor_court_chaplain_canaanite_religion_empire = {
+	type = character
+	gender = male
+	special = councillor
+	tier = empire
+	priority = 300
+	council_position = councillor_court_chaplain
+}
+
+councillor_court_chaplain_canaanite_religion_empire_female = {
+	type = character
+	gender = female
+	special = councillor
+	tier = empire
+	priority = 300
+	council_position = councillor_court_chaplain
+}
 
 # Theocracy #
 

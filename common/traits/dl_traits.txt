@@ -11,9 +11,9 @@ suffete = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_augustus_desc
+				desc = trait_suffete_desc
 			}
-			desc = trait_augustus_character_desc
+			desc = trait_suffete_character_desc
 		}
 	}
 }

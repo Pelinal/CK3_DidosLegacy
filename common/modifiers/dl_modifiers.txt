@@ -1,0 +1,552 @@
+﻿
+dl_restorer_of_phoenicia = {
+	icon = prestige_positive
+	phoenician_opinion = 30
+	monthly_prestige = 0.3
+}
+
+centre_of_mediterranean_trade = {
+	icon = economy_positive
+	monthly_income = 1
+	development_growth_factor = 0.25
+}
+
+baby_sacrificed_martial_best = {
+	martial = 5
+	combat_rating = 15
+	levy_reinforce_rate=0.1
+	land_morale = 0.15
+	days_of_supply = 10
+	infidel_opinion = -10
+	same_religion_opinion = 5
+	monthly_prestige = 3
+	monthly_piety = 3
+	icon = 1
+}
+baby_sacrificed_martial_middle = {
+	martial = 3
+	land_morale = 0.075
+	combat_rating = 10
+	infidel_opinion = -10
+	same_religion_opinion = 5
+	monthly_prestige = 2
+	monthly_piety = 2
+	icon = 1
+}
+baby_sacrificed_martial_worst = {
+	martial = 2	
+	combat_rating = 15
+	same_religion_opinion = 5
+	infidel_opinion = -10
+	monthly_prestige = 1
+	monthly_piety = 1
+	icon = 1
+}
+baby_sacrificed_stewardship_best = {
+	stewardship = 5
+	multiplicative_trade_post_income_modifier=0.1
+	build_cost_modifier = -0.15
+	build_time_modifier = -0.15
+	global_tax_modifier=0.1
+	monthly_character_wealth = 1
+	same_religion_opinion = 5
+	infidel_opinion = -10
+	monthly_prestige = 3
+	monthly_piety = 3
+	icon = 4
+}
+baby_sacrificed_stewardship_middle = {
+	stewardship = 3
+	build_cost_modifier = -0.05
+	build_time_modifier = -0.05
+	global_tax_modifier=0.05
+	monthly_character_wealth = 0.33
+	same_religion_opinion = 5
+	infidel_opinion = -10
+	monthly_prestige = 2
+	monthly_piety = 2
+	icon = 4
+}
+baby_sacrificed_stewardship_worst = {
+	stewardship = 2	
+	global_tax_modifier=0.025
+	monthly_character_wealth = 0.15
+	same_religion_opinion = 5
+	infidel_opinion = -10
+	monthly_prestige = 1
+	monthly_piety = 1
+	icon = 4
+}
+baby_sacrificed_diplomacy_best = {
+	diplomacy = 5
+	global_revolt_risk=-0.15
+	demesne_size=1
+	vassal_opinion = 5
+	male_dynasty_opinion = 10
+	same_religion_opinion = 5
+	infidel_opinion = -10
+	monthly_prestige = 3
+	monthly_piety = 3
+	icon = 3
+}
+baby_sacrificed_diplomacy_middle = {
+	diplomacy = 3
+	global_revolt_risk=-0.05
+	vassal_opinion = 3
+	same_religion_opinion = 5
+	male_dynasty_opinion = 5
+	infidel_opinion = -10
+	monthly_prestige = 2
+	monthly_piety = 2
+	icon = 3
+}
+baby_sacrificed_diplomacy_worst = {
+	diplomacy = 2	
+	vassal_opinion = 3
+	male_dynasty_opinion = 5	
+	same_religion_opinion = 5
+	infidel_opinion = -10
+	monthly_prestige = 1
+	monthly_piety = 1
+	icon = 3
+}
+baby_sacrificed_general_best = {
+	martial = 2
+	diplomacy = 2
+	stewardship = 2
+	monthly_character_wealth=0.25
+	same_religion_opinion = 5
+	infidel_opinion = -10
+	monthly_prestige = 3
+	monthly_piety = 3
+	icon = 41
+}
+baby_sacrificed_general_middle = {
+	martial = 1
+	diplomacy = 1
+	stewardship = 1
+	monthly_character_wealth=0.1	
+	same_religion_opinion = 5
+	infidel_opinion = -10
+	monthly_prestige = 2
+	monthly_piety = 2
+	icon = 41
+}
+baby_sacrificed_general_worst = {
+	martial = 1
+	diplomacy = 1
+	stewardship = 1	
+	same_religion_opinion = 5
+	infidel_opinion = -10
+	monthly_prestige = 1
+	monthly_piety = 1
+	icon = 41
+}
+
+baby_needs_sacrifice = {
+	monthly_piety = -0.25
+	same_religion_opinion = -10
+	church_opinion = -20
+	
+	icon = 49
+}
+
+recently_embezzled = {
+	global_tax_modifier = -0.25
+	vassal_opinion = -10
+
+	icon = 22
+}
+
+blessing_of_eshmun = {
+	monthly_piety = 0.25
+	health = 1
+	learning = 2
+	same_religion_opinion = 10
+	
+	icon = 4
+}
+
+dabke_ball_timer = {
+	monthly_prestige = 0.2
+	vassal_opinion = 5
+	icon = 7
+}
+
+built_trade_hub_here = {}
+built_performers_place = { local_revolt_risk = -0.05 }
+mayumas_festival_timer = { }
+ruins_quest_timer = { }
+
+holding_mayumas_festival = {
+	monthly_piety = 0.2
+	church_opinion = 15
+	icon = 7
+}
+
+hannibals_silver_mines = {
+	tax_income = 4
+	local_tax_modifier = 0.5
+	global_tax_modifier = 0.1
+	local_build_cost_modifier = -0.2
+	local_build_time_modifier = -0.2
+	icon = 6
+}
+
+phoenician_wine_imports = {
+	tax_income = 2
+	diplomacy = 1
+	global_tax_modifier = 0.1
+	icon = 4
+}
+
+monkey_paw_cooldown = {
+	monthly_piety = -1
+	icon = 53
+}
+
+secured_iddum = {
+	intrigue = 2
+	plot_discovery_chance = 0.2
+	liege_piety = 0.25
+	icon = 9
+}
+iddum_damaged = {
+	local_build_cost_modifier = 0.1
+	local_build_time_modifier = 0.1
+	liege_piety = -0.75
+	icon = 49
+}
+
+failed_duty_to_astarte = {
+	monthly_piety = -1
+	same_religion_opinion = -10
+	
+	icon = 40
+}
+performed_duty_to_astarte = {
+	monthly_piety = 0.2
+	same_religion_opinion = 5
+	
+	icon = 39
+}
+
+residing_at_astarte_temple = {
+	health = 0.5
+	same_religion_opinion = 5
+	icon = 18
+}
+
+cothon_damaged = {
+	local_build_cost_modifier = 0.5
+	local_build_time_modifier = 0.5
+	local_tax_modifier = -0.25
+	icon = 62
+}
+
+cothon_prospers = {
+	local_build_cost_modifier = -0.25
+	local_build_time_modifier = -0.25
+	local_tax_modifier = 0.25
+	tradevalue = 20
+	icon = 61
+}
+
+carthage_cothon_prospers = {
+	multiplicative_trade_post_income_modifier = 0.3
+	local_tax_modifier = 0.3
+	tradevalue = 50
+	tax_income = 3
+	icon = 61
+}
+
+cothon_military = {
+	tech_growth_modifier_military = 0.25
+	levy_size = 0.25
+	garrison_size = 1
+	icon = 13
+}
+
+cothon_economy = {
+	tech_growth_modifier_economy = 0.25
+	tradevalue = 25
+	local_tax_modifier = 0.5
+	icon = 13
+}
+
+canaanite_built_cippus_1 = {
+	local_tax_modifier = 0.0125
+	icon = 11
+}
+canaanite_built_cippus_2 = {
+	local_tax_modifier = 0.025
+	icon = 11
+}
+canaanite_built_cippus_3 = {
+	local_tax_modifier = 0.05
+	icon = 11
+}
+
+gods_are_angry = {
+	monthly_piety = -5
+	
+	diplomacy = -1
+	martial = -1
+	stewardship = -1
+	intrigue = -1
+	learning = -2
+	
+	icon = 49
+}
+
+won_mayumas_debate = {
+	diplomacy = 2
+	learning = 1
+	monthly_prestige = 0.25
+	
+	icon = 3
+}
+
+lost_mayumas_debate = {
+	diplomacy = -1
+	monthly_prestige = -0.1
+	
+	icon = 21
+}
+
+mayumas_people_happy = {
+	local_build_cost_modifier = -0.1
+	local_build_time_modifier = -0.1
+	local_revolt_risk = -0.25
+	icon = 18
+}
+
+mayumas_water_pilgrims = {
+	liege_piety = 0.1
+	tax_income = 0.25
+	local_tax_modifier = 0.1
+	icon = 18
+}
+
+built_cippus_recently = {}
+
+#### SOCIETY MODIFIERS ####
+#Influence stuff
+carthage_successful_mission = {
+    society_influence = 1
+}
+carthage_failed_mission = {
+    society_influence = -1
+}
+
+#Powers
+extorted_from_courtier = {
+	global_tax_modifier = -0.1
+	vassal_opinion = -5
+	icon = 21
+}
+
+recently_boosted_province = {
+	icon = 4
+}
+
+phoenician_trade_boost = {
+	tax_income = 2
+	local_tax_modifier = 0.2
+	trade_route_wealth = 0.2
+	trade_route_value = 0.2
+	icon = 61
+}
+
+sabotaged_foreign_trade = {
+	trade_route_wealth = 0.1
+	trade_route_value = 0.1
+	
+	vassal_opinion = 10
+	city_opinion = -5
+	
+	icon = 14
+}
+
+trade_has_been_sabotaged = {
+	trade_route_wealth = -0.15
+	trade_route_value = -0.15
+	local_tax_modifier = -0.1
+	local_build_cost_modifier = 0.2
+	local_build_time_modifier = 0.2
+	
+	icon = 22
+}
+
+recently_studied_statecraft = { }
+
+taking_money_for_temple = {
+	global_revolt_risk = 0.025
+	global_tax_modifier = -0.125
+	monthly_piety = 0.25
+}
+
+prep_for_eshmun1 = {
+	fertility = -100
+	monthly_piety = 0.5
+	same_religion_opinion = 5
+	icon = 40
+}
+
+prep_for_eshmun2 = {
+	health = -0.25
+	martial = -1
+	intrigue = -1
+	monthly_piety = 0.5
+	same_religion_opinion = 5
+	icon = 60
+}
+brick_of_borobudur = {
+	monthly_piety = 0.25
+	monthly_prestige = 0.75
+	learning = 1
+	stewardship = 1
+	icon = 48
+}
+
+## VERSION 1.1 - NEW MODIFIERS ##
+dedicated_to_tanit = {
+	icon = 79
+	diplomacy = 1
+	fertility = -0.05
+	monthly_piety = 0.15
+}
+dedicated_to_astarte = {
+	icon = 79
+	diplomacy = 1
+	fertility = 0.075
+	monthly_prestige = 0.05
+}
+dedicated_to_qadeshtu = {
+	icon = 79
+	diplomacy = 1
+	fertility = 0.1
+	sex_appeal_opinion = 5
+}
+dedicated_to_kothar_wa_khasis = {
+	icon = 79
+	martial = 1
+	stewardship = 1
+	land_organisation = 0.025
+}
+dedicated_to_yam = {
+	icon = 79
+	martial = 1
+	attrition = -0.05
+	days_of_supply = 30
+}
+dedicated_to_moloch = {
+	icon = 79
+	martial = 1
+	combat_rating = 10
+	zealous_opinion = 5
+}
+dedicated_to_baal_hammon = {
+	icon = 79
+	stewardship = 1
+	monthly_prestige = 0.1
+	temple_vassal_tax_modifier = 0.15
+}
+dedicated_to_melqart = {
+	icon = 79
+	stewardship = 1
+	monthly_prestige = 0.1
+	city_tax_modifier = 0.1
+}
+dedicated_to_dagon = {
+	icon = 79
+	stewardship = 1
+	monthly_prestige = 0.1
+	castle_tax_modifier = 0.1
+}
+dedicated_to_eshmun = {
+	icon = 79
+	learning = 1
+	health = 1
+	monthly_piety = 0.05
+}
+dedicated_to_mot = {
+	icon = 79
+	learning = 3
+	health = -0.1
+}
+dedicated_to_shed_horon = {
+	icon = 79
+	learning = 1
+	defensive_plot_power_modifier = 0.25
+}
+restorationist_ideology = {
+	icon = 13
+	land_morale = 0.15
+	global_defensive = 0.15
+	global_levy_size = 0.1
+}
+
+## 1.1 ELEPHANTEERS MODIFIERS ##
+
+rouncey_elephant = {
+	monthly_prestige = 0.05
+	icon = 56
+}
+
+healthy_elephant = {
+	monthly_prestige = 0.15
+	icon = 56
+}
+
+pedigree_elephant = {
+	monthly_prestige = 0.25
+	icon = 56
+}
+
+elephant_poorly_trained = {
+	monthly_prestige = -0.05
+	icon = 124
+}
+
+elephant_somewhat_trained = {
+	monthly_prestige = 0.05
+	icon = 123
+}
+
+elephant_well_trained = {
+	monthly_prestige = 0.1
+	icon = 123
+}
+
+elephant_trial_cooldown = {
+	icon = 19
+}
+
+## 1.1 BUILDING MODIFIERS ##
+cippus_opinion = {
+	dynasty_opinion = 5
+}
+
+buy_trade_post_cooldown = {
+	icon = 4
+}
+
+culture_wing_district_opinion = {
+	punic_opinion = 2
+}
+finance_forum_wing_district_opinion = {
+	city_opinion = 12
+}
+culture_museum_wing_district_opinion = {
+	dynasty_opinion = 10
+}
+plaza_3_opinion = {
+	city_opinion = 5
+}
+apartments_opinion = {
+	punic_opinion = 4
+}
+manorhouse_opinion= {
+	punic_opinion = 8
+}

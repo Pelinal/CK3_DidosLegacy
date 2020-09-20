@@ -40,3 +40,8 @@
  k_lybia_adj:0 "Lybian"
  k_baetica:0 "Baetica"
  k_baetica_adj:0 "Baetic"
+
+# Mercenaries
+ mercenary_company_phoenician_marines:0 "Phoenician Marines"
+ mercenary_company_the_elephanteers:0 "The Elephanteers"
+ mercenary_company_sacred_rejects:0 "Rouge Sacred Band"

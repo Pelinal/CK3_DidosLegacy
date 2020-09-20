@@ -11,12 +11,17 @@
 	mercenary_names = {
 		{ name = mercenary_company_phoenician_marines }
 		{ name = mercenary_company_the_elephanteers }
+		{ name = mercenary_company_sacred_rejects }
 	}
 
 	punic = {
 		
 		color = { 140 75 140 }
-
+		
+		character_modifier = {
+			mercenary_hire_cost_mult = -0.1
+		}
+		
 		cadet_dynasty_names = {
 			"dynn_Sigibal"
 			{ "dynnp_adn" "dynn_Murgi" }

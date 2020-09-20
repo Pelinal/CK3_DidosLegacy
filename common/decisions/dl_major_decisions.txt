@@ -11,24 +11,20 @@
 	ai_check_interval = 120
 	
 	is_shown = {
-		OR = { 
-			faith = faith:canaanitism_pagan
-			faith = faith:tyrianism_pagan
-		}
-		#is_feudal = yes
-		culture = culture:punic
+		culture = culture_group:canaanite_group
 		is_landed = yes
 		NOT = { has_title = title:k_carthage }
 	}
-		
+	
 	is_valid = {
 		prestige >= 2500
+		prestige_level >= 3
 		completely_controls = title:d_gabes
 		completely_controls = title:d_kairouan
 		completely_controls = title:d_tunis
 		completely_controls = title:d_kroumerie
 		completely_controls = title:d_bejaia
-		completely_controls = title:d_zab
+		#completely_controls = title:d_zab
 		completely_controls = title:d_alger	
 		is_at_war = no
 	}
@@ -38,8 +34,6 @@
 		is_imprisoned = no
 		is_independent_ruler = yes
 	}
-	
-	cost = { gold = 250 }
 	
 	effect = {
 		#Create Carthage, destroy other kingdoms.
@@ -154,8 +148,7 @@ restore_mediterranean_hegemony = {
 	}
 	
 	is_valid = {
-		piety >= 1000
-		prestige >= 1000		
+		prestige_level >= 4
 		completely_controls = title:c_tunis
 		completely_controls = title:c_algier
 		completely_controls = title:c_tangiers
@@ -171,7 +164,7 @@ restore_mediterranean_hegemony = {
 		is_independent_ruler = yes
 	}
 	
-	cost = { gold = 1000 }
+	cost = { prestige = 1000 piety = 1000 }
 	
 	effect = {
 		trigger_event = carthage.25
@@ -212,7 +205,7 @@ phoenician_renaissance_decision = {
 	}
 	
 	is_valid= {
-		prestige >= 1500
+		prestige_level >= 2
 		completely_controls = title:d_antioch
 		completely_controls = title:d_lebanon
 		completely_controls = title:c_acre
@@ -221,6 +214,8 @@ phoenician_renaissance_decision = {
 		completely_controls = title:c_homs
 		completely_controls = title:c_shayzar
 	}
+	
+	cost = { prestige = 1500 }
 	
 	is_valid_showing_failures_only = {
 		is_available_adult = yes
@@ -266,10 +261,7 @@ form_the_phoenician_marines = {
 	ai_check_interval = 120
 	
 	is_shown = {
-		NOT = { is_title_active = d_phoenician_marines }
-		has_culture_group = culture_group:canaanite_group
-		is_landed = yes
-		is_independent_ruler = yes
+		always = no
 	}
 	
 	cost = {
@@ -940,7 +932,7 @@ build_a_cippus = {
 	}
 }
 
-form_empire_of_carthage = {
+form_empire_of_carthage = { # Actually Mediterranea
 
 	picture = "gfx/interface/illustrations/decisions/form_empire_of_carthage.dds"
 	
@@ -953,26 +945,23 @@ form_empire_of_carthage = {
 	ai_check_interval = 120
 	
 	is_shown = {
-		OR = {
-			AND = {
-				higher_tier_than = DUKE
-				has_culture_group = culture_group:canaanite_group
-				is_landed = yes
-				NOR = {
-					has_title = e_carthage
-					has_global_flag = formed_carthage
-				}
-			}
-			trait = carthage_debug
+		higher_tier_than = duchy
+		culture_group = culture_group:canaanite_group
+		is_landed = yes
+		NOR = {
+			has_title = e_carthage
+			has_global_flag = formed_carthage
 		}
 	}
 	
 	is_valid = {
-		completely_controls = title:k_jerusalem
+		completely_controls = title:d_antioch
+		completely_controls = title:d_lebanon
 		completely_controls = title:d_tunis
-		completely_controls = title:d_syrte
 		completely_controls = title:d_murcia
+		
 		has_title = title:k_carthage
+		has_title = title:k_phoenicia
 		custom_tooltip = {
 			text = phoenician_renaissance_done_tt
 			has_global_flag = phoenicia_restored_culture

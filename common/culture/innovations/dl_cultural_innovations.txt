@@ -33,6 +33,8 @@ innovation_modern_cothons = {
 		}
 	}
 	
+	custom = unlock_cothon_building_02
+	
 	flag = global_regular
 	flag = early_medieval_era_regular
 }

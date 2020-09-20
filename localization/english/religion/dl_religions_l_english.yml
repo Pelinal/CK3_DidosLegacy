@@ -88,13 +88,6 @@ l_english:
  canaanitism_bishop_male:0 "rab kahen"
  canaanitism_bishop_male_plural:0 "rab kahen"
  
- councillor_court_chaplain_canaanite_religion_county:0 "Court Kahen"
- councillor_court_chaplain_canaanite_religion_county_possessive:0 "Court Kahen's"
- councillor_court_chaplain_canaanite_religion_duchy:1 "Kahen"
- councillor_court_chaplain_canaanite_religion_duchy_possessive:1 "Kahen's"
- councillor_court_chaplain_canaanite_religion_kingdom:1 "Rab Kahen"
- councillor_court_chaplain_canaanite_religion_kingdom_possessive:1 "Rab Kahen's"
- 
  holy_order_the_tanitguard:0 "The Tanitguard"
  holy_order_molochs_firebrands:0 "Moloch's Firebrands"
  holy_order_warriors_of_baal:0 "Warriors of Baal"

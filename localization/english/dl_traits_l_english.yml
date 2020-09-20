@@ -1,0 +1,4 @@
+﻿l_english:
+ trait_suffete:0 "Suffete"
+ trait_suffete_desc:0 "This character is the ruler of a restored Carthage, refered to as a Sufete or 'judge.'"
+ trait_suffete_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is the ruler of a restored Carthage, refered to as a Sufete or 'judge.'"
