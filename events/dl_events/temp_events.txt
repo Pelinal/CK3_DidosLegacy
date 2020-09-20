@@ -1,0 +1,602 @@
+﻿namespace = cflavour
+#== [1] DABKE DANCING ==#
+cflavour.10 = {
+	type = character_event
+	desc = EVTDESC_cflavour_10
+	title = EVTNAME_cflavour_10
+	
+    theme = diplomacy
+    left_portrait = {
+        character = root
+        animation = happiness
+    }	
+	
+	#I shall make preparations
+	option = {
+		name = EVTOPTA_cflavour_10
+		hidden_effect = {
+			add_character_modifier = { name = dabke_ball_timer years = 3 }
+		}
+		trigger_event = { id = cflavour.11 days = 7 }
+		stress_impact = {
+			gregarious = minor_stress_loss
+			shy = minor_stress_gain
+		}
+		ai_chance = { factor = 80 }
+	}
+	
+	#Nah, I'm good
+	option = {
+		name = EVTOPTB_cflavour_10
+		add_piety = -50
+		#Change stress accordingly
+		ai_chance = { factor = 20 }
+	}
+}
+
+#Prep 1 Hire levantine dancers
+cflavour.11 = {
+	type = character_event
+	desc = EVTDESC_cflavour_11
+	title = EVTNAME_cflavour_11
+
+    theme = diplomacy
+    left_portrait = {
+        character = root
+        animation = worry
+    }	
+	right_portrait = {
+		character = scope:friendly_dancer
+		animation = admiration
+	}
+	lower_left_portrait = {
+		character = scope:friendly_dancer_2
+		animation = personality_honorable 
+	}
+	lower_center_portrait = {
+		character = scope:friendly_dancer_3
+		animation = admiration
+	}
+	lower_right_portrait = {
+		character = scope:friendly_dancer_4
+		animation = personality_bold
+	}	
+	immediate = {
+		#create friendly dancers
+		create_character = {
+			age = { 18 25 }
+			random_traits = yes
+			gender_female_chance = 100
+			dynasty = none
+			faith = faith:ashari
+			culture = culture:levantine
+			location = scope:activity.activity_province
+			save_scope_as = friendly_dancer
+		}
+		create_character = {
+			age = { 18 25 }
+			random_traits = yes
+			gender_female_chance = 100
+			dynasty = none
+			faith = faith:ashari
+			culture = culture:levantine
+			location = scope:activity.activity_province
+			save_scope_as = friendly_dancer_2
+		}
+		create_character = {
+			age = { 18 25 }
+			random_traits = yes
+			gender_female_chance = 100
+			dynasty = none
+			faith = faith:ashari
+			culture = culture:levantine
+			location = scope:activity.activity_province
+			save_scope_as = friendly_dancer_3
+		}
+		create_character = {
+			age = { 18 25 }
+			random_traits = yes
+			gender_female_chance = 100
+			dynasty = none
+			faith = faith:ashari
+			culture = culture:levantine
+			location = scope:activity.activity_province
+			save_scope_as = friendly_dancer_4
+		}		
+	}
+	
+	option = {
+		name = EVTOPTA_cflavour_11
+		remove_short_term_gold = 25
+
+		ai_chance = { factor = 100 }		
+		
+		trigger_event = { id = cflavour.12 days = 30 }
+	}
+}
+
+#Prep 2 get food
+cflavour.12 = {
+	type = character_event
+	desc = EVTDESC_cflavour_12
+	title = EVTNAME_cflavour_12
+
+    theme = diplomacy
+    left_portrait = {
+        character = root
+        animation = idle
+    }	
+	
+	option = {
+		name = EVTOPTA_cflavour_12
+		remove_short_term_gold = 50
+		add_prestige = 25
+		ai_chance = { factor = 50 }
+		stress_impact = {
+			base = minor_stress_loss
+		}
+	}
+	option = {
+		name = EVTOPTB_cflavour_12
+		remove_short_term_gold = 10
+		ai_chance = { factor = 50 }
+	}
+	
+	after = {
+		trigger_event = { id = cflavour.13 days = 30 }	
+	}
+}
+
+#Prep 3 consult priests
+cflavour.13 = {
+	type = character_event
+	desc = EVTDESC_cflavour_13
+	title = EVTNAME_cflavour_13
+
+    theme = diplomacy
+    left_portrait = {
+        character = root
+        animation = idle
+    }	
+
+	option = {
+		name = EVTOPTA_cflavour_13
+		remove_short_term_gold = 15
+		add_piety = 75
+		ai_chance = { factor = 90 }
+			stress_impact = {
+			cynical = minor_stress_gain
+			zealous = minor_stress_loss	
+		}	
+	}
+	option = {
+		name = EVTOPTB_cflavour_13
+		add_piety = -5
+		random = {
+			chance = 25
+			add_trait = cynical
+		}
+		ai_chance = { factor = 10 }
+		stress_impact = {
+			cynical = minor_stress_loss
+			zealous = minor_stress_gain		
+		}
+	}	
+	after = {
+		trigger_event = { id = cflavour.14 days = 30 }	
+	}
+}
+
+#Choose to be outgoing or not
+cflavour.14 = {
+	type = character_event
+	desc = EVTDESC_cflavour_14
+	title = EVTNAME_cflavour_14
+
+    theme = feast_activity
+    left_portrait = {
+        character = root
+        animation = worry
+    }
+	
+	option = {
+		#Outgoing, gregarious
+		name = EVTOPTA_cflavour_14_gregarious
+		trigger = {
+			OR = {
+				has_trait = gregarious
+				NOT = {has_trait = shy}
+			}
+		}
+		random_list = {
+			25 = {
+				#Friendship event	
+				trigger_event = { id = cflavour.15 days = 3 }
+			}
+			25 = {
+				#Rivalry event
+				trigger_event = { id = cflavour.16 days = 3 }				
+			}	
+			25 = {
+				#Chug event
+				trigger_event = { id = cflavour.17 days = 3 }				
+			}	
+			25 = {
+				#Debuchery event	
+				trigger_event = { id = cflavour.18 days = 3 }					
+			}	
+		}
+		
+	}
+	option = {
+		#Outgoing, shy
+		name = EVTOPTA_cflavour_14_shy
+		trigger = { has_trait = shy}
+		random_list = {
+			25 = {
+				#Friendship event	
+				trigger_event = { id = cflavour.15 days = 3 }
+			}
+			25 = {
+				#Rivalry event	
+				trigger_event = { id = cflavour.16 days = 3 }				
+			}	
+			25 = {
+				#Chug event		
+				trigger_event = { id = cflavour.17 days = 3 }					
+			}	
+			25 = {
+				#Debuchery event
+				trigger_event = { id = cflavour.18 days = 3 }				
+			}			
+		}		
+	}
+	
+	option = {
+		#Just here for the food, gregarious
+		name = EVTOPTB_cflavour_14_gregarious
+		trigger = {
+			OR = {
+				has_trait = gregarious
+				NOT = {has_trait = shy}
+			}
+		}
+		random_list = {
+			25 = {
+				#Friendship event	
+				trigger_event = { id = cflavour.15 days = 3 }
+			}
+			25 = {
+				#Rivalry event
+				trigger_event = { id = cflavour.16 days = 3 }				
+			}	
+			25 = {
+				#Get picked on event
+				trigger_event = { id = cflavour.19 days = 3 }
+			}
+			25 = {
+				#Drunk and sad event
+				trigger_event = { id = cflavour.20 days = 3 }				
+			}	
+		}		
+	}
+	option = {
+		#Just here for the food, shy
+		name = EVTOPTB_cflavour_14_shy
+		trigger = { has_trait = shy}
+		random_list = {
+			25 = {
+				#Friendship event	
+				trigger_event = { id = cflavour.15 days = 3 }				
+			}
+			25 = {
+				#Rivalry event
+				trigger_event = { id = cflavour.16 days = 3 }				
+			}	
+			25 = {
+				#Get picked on event	
+				trigger_event = { id = cflavour.19 days = 3 }				
+			}
+			25 = {
+				#Drunk and sad event
+				trigger_event = { id = cflavour.20 days = 3 }				
+			}						
+		}		
+	}	
+}
+
+#Friendship event
+cflavour.15 = {
+	type = character_event
+	desc = EVTDESC_cflavour_15
+	title = EVTNAME_cflavour_15
+
+    theme = feast_activity
+    left_portrait = {
+        character = root
+        animation = happiness
+    }
+    right_portrait = {
+        character = scope:new_friend
+        animation = ecstasy
+    }	
+	
+	immediate = {
+		random_vassal = {
+			save_scope_as = new_friend
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_cflavour_15
+		scope:new_friend = {
+			set_relation_friend = root
+		}
+	}
+	
+	after = {
+		trigger_event = { id = cflavour.21 days = 3 }	
+	}
+}
+
+#Rivalry event
+cflavour.16 = {
+	type = character_event
+	desc = EVTDESC_cflavour_16
+	title = EVTNAME_cflavour_16
+
+    theme = feast_activity
+    left_portrait = {
+        character = root
+        animation = rage
+    }
+    right_portrait = {
+        character = scope:new_rival
+        animation = anger
+    }	
+	
+	immediate = {
+		random_vassal = {
+			save_scope_as = new_rival
+		}		
+	}
+	
+	option = {
+		name = EVTOPTA_cflavour_16
+		scope:new_rival = {
+			set_relation_rival = root
+		}
+	}	
+	
+	after = {
+		trigger_event = { id = cflavour.21 days = 3 }	
+	}	
+}
+
+#Chug event
+cflavour.17 = {
+	type = character_event
+	desc = EVTDESC_cflavour_17
+	title = EVTNAME_cflavour_17
+
+    theme = feast_activity
+    left_portrait = {
+        character = root
+        animation = disgust
+    }
+	
+	option = {
+		name = EVTOPTA_cflavour_17
+		#All vassals get +5 opinion
+		add_prestige = 10
+		random = {
+			chance = 35
+			add_trait = drunkard		
+		}
+		stress_impact = {
+			base = minor_stress_loss
+			drunkard = major_stress_loss
+			shy = minor_stress_gain
+		}
+	}
+	option = {
+		name = EVTOPTB_cflavour_17
+		#All vassals get -5 opinion
+		remove_prestige = 20
+		stress_impact = {
+			base = minor_stress_gain
+			drunkard = medium_stress_gain
+			shy = minor_stress_loss
+		}
+	}
+	
+	after = {
+		trigger_event = { id = cflavour.21 days = 3 }	
+	}	
+}
+
+#Debauchery event
+cflavour.18 = {
+	type = character_event
+	desc = EVTDESC_cflavour_18
+	title = EVTNAME_cflavour_18
+
+    theme = feast_activity
+    left_portrait = {
+		character = scope:friendly_dancer
+		animation = love
+    }
+	right_portrait = {
+        character = root
+        animation = flirtation_left
+	}
+	
+	immediate = {
+		create_character = {
+			age = { 18 25 }
+			random_traits = yes
+			gender_female_chance = 100
+			dynasty = none
+			faith = faith:ashari
+			culture = culture:levantine
+			location = scope:activity.activity_province
+			save_scope_as = friendly_dancer
+		}	
+	}
+	
+	option = {
+		name = EVTOPTA_cflavour_18
+		add_prestige = 10
+		scope:friendly_dancer = {
+			set_relation_lover = root
+		}
+		random = {
+			chance = 70
+			scope:friendly_dancer = {
+				make_pregnant = {
+					father = root
+				}
+			}
+		}
+		stress_impact = {
+			base = minor_stress_loss
+			chaste = minor_stress_gain
+			lustful = medium_stress_loss
+			deviant = medium_stress_loss
+		}		
+	}
+	option = {
+		name = EVTOPTB_cflavour_18
+		remove_prestige =20
+		random = {
+			chance = 20
+			add_trait = chaste
+		}
+		stress_impact = {
+			base = minor_stress_gain
+			chaste = minor_stress_loss
+			lustful = medium_stress_gain
+			deviant = medium_stress_gain
+		}
+	}
+	after = {
+		trigger_event = { id = cflavour.21 days = 3 }	
+	}	
+}
+
+#Get picked on event
+cflavour.19 = {
+	type = character_event
+	desc = EVTDESC_cflavour_19
+	title = EVTNAME_cflavour_19
+
+    theme = feast_activity
+    left_portrait = {
+        character = root
+        animation = sadness
+    }
+    right_portrait = {
+        character = scope:annoying_person
+        animation = anger
+    }	
+	
+	immediate = {
+		random_vassal = {
+			save_scope_as = annoying_person
+		}
+	}
+	option = {
+		name = EVTOPTA_cflavour_19
+		add_piety = 50
+		random = {
+			chance = 50
+			add_trait = craven
+		}
+		stress_impact = {
+			base = medium_stress_gain
+			craven = minor_stress_gain
+			shy = minor_stress_gain
+		}
+	}
+	option = {
+		name = EVTOPTB_cflavour_19
+		random = {
+			chance = 50
+			add_trait = stubborn
+		}
+		stress_impact = {
+			base = medium_stress_gain
+			stubborn = minor_stress_gain
+		}
+	}
+	option = {
+		name = EVTOPTC_cflavour_19
+		add_piety = -100
+		imprison_character_effect = {
+			TARGET = scope:annoying_person
+			IMPRISONER = root
+		}
+		random = {
+			chance = 50
+			add_trait = sadistic
+		}
+		stress_impact = {
+			base = medium_stress_gain
+			sadistic = minor_stress_loss
+			torturer = minor_stress_loss
+		}
+	}	
+	after = {
+		trigger_event = { id = cflavour.21 days = 3 }	
+	}	
+}
+
+#Drunk and sad event
+cflavour.20 = {
+	type = character_event
+	desc = EVTDESC_cflavour_20
+	title = EVTNAME_cflavour_20
+
+    theme = feast_activity
+    left_portrait = {
+        character = root
+        animation = sadness
+    }
+	option = {
+		name = EVTOPTA_cflavour_20
+		stress_impact = {
+			base = medium_stress_gain
+			drunkard = major_stress_gain
+		}
+		random = {
+			chance = 50
+			add_trait = drunkard		
+		}
+	}
+	after = {
+		trigger_event = { id = cflavour.21 days = 3 }	
+	}	
+}
+
+
+#Dabke concludes
+cflavour.21 = {
+	type = character_event	
+	desc = EVTDESC_cflavour_21
+	title = EVTNAME_cflavour_21
+
+    theme = feast_activity
+    left_portrait = {
+        character = root
+        animation = personality_honorable
+    }	
+	
+	option = {
+		name = EVTOPTA_cflavour_21
+		add_piety = 50
+		add_prestige = 50
+		stress_impact = {
+			base = medium_stress_loss
+		}
+	}
+}
