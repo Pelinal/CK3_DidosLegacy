@@ -387,7 +387,12 @@ cflavour.17 = {
 	
 	option = {
 		name = EVTOPTA_cflavour_17
-		#All vassals get +5 opinion
+		every_vassal = {
+			add_opinion = {
+				modifier = chugged_drink
+				target = root
+			}
+		}
 		add_prestige = 10
 		random = {
 			chance = 35
@@ -401,7 +406,12 @@ cflavour.17 = {
 	}
 	option = {
 		name = EVTOPTB_cflavour_17
-		#All vassals get -5 opinion
+		every_vassal = {
+			add_opinion = {
+				modifier = did_not_chug_drink
+				target = root
+			}
+		}
 		remove_prestige = 20
 		stress_impact = {
 			base = minor_stress_gain
@@ -442,6 +452,12 @@ cflavour.18 = {
 			location = scope:activity.activity_province
 			save_scope_as = friendly_dancer
 		}	
+		scope:friendly_dancer = {
+			add_opinion = {
+				modifier = dancer_attracted
+				target = root
+			}
+		}
 	}
 	
 	option = {

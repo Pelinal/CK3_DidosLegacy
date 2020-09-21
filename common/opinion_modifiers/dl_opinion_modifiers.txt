@@ -1,0 +1,14 @@
+dancer_attracted = {
+	opinion = 70
+	decaying = yes
+	years = 1
+}
+
+chugged_drink = {
+	opinion = 5
+	months = 1
+}
+did_not_chug_drink = {
+	opinion = -5
+	months = 1
+}
