@@ -221,7 +221,8 @@ hasdrubal_dna = {
 			eye_accessory={ "normal_eyes" 92 "normal_eyes" 92 }
 			teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
 			eyelashes_accessory={ "normal_eyelashes" 120 "normal_eyelashes" 120 }
-		}	
+			headgear={ "no_headgear" 0 "no_headgear" 0 }
+		}
 	}
 	enabled = yes
 }
