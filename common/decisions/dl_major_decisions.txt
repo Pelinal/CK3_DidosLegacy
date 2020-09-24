@@ -857,14 +857,12 @@ build_a_cippus = {
 	is_valid = {		
 		custom_tooltip = {
 			text = cippus_conditions_tt
-			any_demesne_province = {
-				any_province_holding = {
-					NOT = {
-						has_holding_modifier = canaanite_built_cippus_3
-					}
-					owner = {
-						character = ROOT
-					}
+			any_sub_realm_county = {
+				NOT = {
+					has_county_modifier = canaanite_built_cippus
+				}
+				owner = {
+					character = ROOT
 				}
 			}
 		}

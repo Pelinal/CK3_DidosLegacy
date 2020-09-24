@@ -186,7 +186,7 @@ holding_mayumas_festival = {
 
 hannibals_silver_mines = {
 	tax_income = 4
-	local_tax_modifier = 0.5
+	tax_mult = 0.5
 	global_tax_modifier = 0.1
 	local_build_cost_modifier = -0.2
 	local_build_time_modifier = -0.2
@@ -240,21 +240,21 @@ residing_at_astarte_temple = {
 cothon_damaged = {
 	local_build_cost_modifier = 0.5
 	local_build_time_modifier = 0.5
-	local_tax_modifier = -0.25
+	tax_mult = -0.25
 	icon = 62
 }
 
 cothon_prospers = {
 	local_build_cost_modifier = -0.25
 	local_build_time_modifier = -0.25
-	local_tax_modifier = 0.25
+	tax_mult = 0.25
 	tradevalue = 20
 	icon = 61
 }
 
 carthage_cothon_prospers = {
 	multiplicative_trade_post_income_modifier = 0.3
-	local_tax_modifier = 0.3
+	tax_mult = 0.3
 	tradevalue = 50
 	tax_income = 3
 	icon = 61
@@ -270,23 +270,9 @@ cothon_military = {
 cothon_economy = {
 	tech_growth_modifier_economy = 0.25
 	tradevalue = 25
-	local_tax_modifier = 0.5
+	tax_mult = 0.5
 	icon = 13
 }
-
-canaanite_built_cippus_1 = {
-	local_tax_modifier = 0.0125
-	icon = 11
-}
-canaanite_built_cippus_2 = {
-	local_tax_modifier = 0.025
-	icon = 11
-}
-canaanite_built_cippus_3 = {
-	local_tax_modifier = 0.05
-	icon = 11
-}
-
 gods_are_angry = {
 	monthly_piety = -5
 	
@@ -324,7 +310,7 @@ mayumas_people_happy = {
 mayumas_water_pilgrims = {
 	liege_piety = 0.1
 	tax_income = 0.25
-	local_tax_modifier = 0.1
+	tax_mult = 0.1
 	icon = 18
 }
 
@@ -352,7 +338,7 @@ recently_boosted_province = {
 
 phoenician_trade_boost = {
 	tax_income = 2
-	local_tax_modifier = 0.2
+	tax_mult = 0.2
 	trade_route_wealth = 0.2
 	trade_route_value = 0.2
 	icon = 61
@@ -371,7 +357,7 @@ sabotaged_foreign_trade = {
 trade_has_been_sabotaged = {
 	trade_route_wealth = -0.15
 	trade_route_value = -0.15
-	local_tax_modifier = -0.1
+	tax_mult = -0.1
 	local_build_cost_modifier = 0.2
 	local_build_time_modifier = 0.2
 	
