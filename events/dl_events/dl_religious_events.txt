@@ -1,0 +1,40 @@
+#== TEMPLE OF ASTARTE/TANIT ==#
+carthage.36 = {
+    id = character_event
+    desc = EVTDESC_carthage_36
+	title = EVTNAME_carthage_36
+    
+	theme = pilgrimage_activity
+	override_background = {
+		event_background = temple
+	}
+	left_portrait = root
+	
+	immediate = {
+		# Stop characters from planning multiple activities at once.
+		add_character_flag = {
+			flag = planning_an_activity
+			days = 30
+		}
+	}
+	
+    option = {
+        name = EVTOPTA_carthage_36
+		
+		hidden_tooltip = {
+			character_event = { id = carthage.37 days = 7 random = 7 }
+			random_list = {
+				33 = { add_character_flag = astarte_help } #People in need
+				33 = { add_character_flag = astarte_faith } #Cynical/Zealous
+				34 = { add_character_flag = astarte_item } #Buy a holy item
+			}
+		}
+    }
+	
+    option = {
+        name = EVTOPTB_carthage_36
+		add_piety = -100
+		custom_tooltip = can_go_back_to_temple_after_timer_tt
+		add_character_modifier = { name = failed_duty_to_astarte years = 10 }
+    }
+}

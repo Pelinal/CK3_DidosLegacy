@@ -50,39 +50,42 @@ carthage.35 = {
 		title:k_phoenicia = {
 			set_de_jure_liege_title = title:e_arabia
 		}
-		every_county = {
-			limit = {
-				# All counties in Phoenicia will convert to phoenician
-				title_province = {
-					geographical_region = world_middle_east_jerusalem
+		custom_tooltip = dl_phoenicia_conversion_tt
+		hidden_effect = {
+			every_county = {
+				limit = {
+					# All counties in Phoenicia will convert to phoenician
+					title_province = {
+						geographical_region = world_middle_east_jerusalem
+					}
 				}
+				add_to_list = dl_phoenician_counties
 			}
-			add_to_list = dl_phoenician_counties
-		}
 
-		# Convert the counties to Phoenician
-		every_in_list = {
-			list = dl_phoenician_counties
-			limit = {
-				holder = {
-					OR = {
-						AND = {
-							is_ai = no
-							culture_group = culture_group:canaanite_group
-						}
-						any_liege_or_above = {
-							is_ai = no
-							culture_group = culture_group:canaanite_group
+			# Convert the counties to Phoenician
+			every_in_list = {
+				list = dl_phoenician_counties
+				limit = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture_group = culture_group:canaanite_group
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture_group = culture_group:canaanite_group
+							}
 						}
 					}
 				}
-			}
-			
-			# All counties in Phoenicia become Phoenician
-			convert_county_and_holder_if_in_region_effect = {
-				OLD_CULTURE = culture:levantine
-				NEW_CULTURE = culture:phoenician
-				REGION = world_middle_east_jerusalem
+				
+				# All counties in Phoenicia become Phoenician
+				convert_county_and_holder_if_in_region_effect = {
+					OLD_CULTURE = culture:levantine
+					NEW_CULTURE = culture:phoenician
+					REGION = world_middle_east_jerusalem
+				}
 			}
 		}
 	}
