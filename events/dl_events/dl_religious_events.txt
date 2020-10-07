@@ -1,6 +1,6 @@
 #== TEMPLE OF ASTARTE/TANIT ==#
 carthage.36 = {
-    id = character_event
+    type = character_event
     desc = EVTDESC_carthage_36
 	title = EVTNAME_carthage_36
     
@@ -21,12 +21,11 @@ carthage.36 = {
     option = {
         name = EVTOPTA_carthage_36
 		
-		hidden_tooltip = {
-			character_event = { id = carthage.37 days = 7 random = 7 }
+		hidden_effect = {
 			random_list = {
-				33 = { add_character_flag = astarte_help } #People in need
-				33 = { add_character_flag = astarte_faith } #Cynical/Zealous
-				34 = { add_character_flag = astarte_item } #Buy a holy item
+				33 = { trigger_event = { id = carthage.37 days = 7 } } #People in need
+				33 = { trigger_event = { id = carthage.38 days = 7 } } #Cynical/Zealous
+				34 = { trigger_event = { id = carthage.39 days = 7 } } #Buy a holy item
 			}
 		}
     }
@@ -36,5 +35,325 @@ carthage.36 = {
 		add_piety = -100
 		custom_tooltip = can_go_back_to_temple_after_timer_tt
 		add_character_modifier = { name = failed_duty_to_astarte years = 10 }
+    }
+}
+
+# People in need
+carthage.37 = {
+    type = character_event
+    desc = EVTDESC_carthage_37
+	title = EVTNAME_carthage_37
+    
+	theme = pilgrimage_activity
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	override_background = {
+		event_background = farmland
+	}
+	#override_icon = {
+	#	reference = "gfx/interface/event_window/type_faith.dds"
+	#}
+	
+    option = {
+        name = EVTOPTA_carthage_37
+		
+		stress_impact = {
+			improvident = medium_stress_loss
+		}
+		
+		add_prestige = -75
+		remove_short_term_gold = 50
+		if = {
+			limit = { NOT = { has_trait = generous } }	
+			random = {
+				chance = 60
+				add_trait = generous
+			}
+		}
+		
+		hidden_effect = {
+			if = {
+				limit = { has_character_flag = dl_temple_pilgrimage_mid }
+				trigger_event = { id = carthage.40 days = 8 } # Arrival at Temple
+			}
+			else = {
+				random_list = {
+					33 = { trigger_event = { id = carthage.40 days = 8 } } # Arrival at Temple
+					33 = { trigger_event = { id = carthage.38 days = 5 } } #Cynical/Zealous
+					34 = { trigger_event = { id = carthage.39 days = 5 } } #Buy a holy item
+				}
+			}
+		}
+    }
+	
+    option = {
+        name = EVTOPTB_carthage_37
+		#name = EVTOPTF_carthage_37
+		add_prestige = 150
+		
+		stress_impact = {
+			charitable = medium_stress_impact_gain
+		}
+		stress_impact = {
+			improvident = major_stress_impact_gain
+		}
+		
+		hidden_effect = {
+			if = {
+				limit = { has_character_flag = dl_temple_pilgrimage_mid }
+				trigger_event = { id = carthage.40 days = 8 } # Arrival at Temple
+			}
+			else = {
+				random_list = {
+					33 = { trigger_event = { id = carthage.40 days = 8 } } # Arrival at Temple
+					33 = { trigger_event = { id = carthage.38 days = 5 } } #Cynical/Zealous
+					34 = { trigger_event = { id = carthage.39 days = 5 } } #Buy a holy item
+				}
+			}
+		}
+		
+		random = {
+			chance = 40
+			add_trait = arbitrary
+		}
+    }
+	
+	after = {
+		add_character_flag = dl_temple_pilgrimage_mid
+	}
+}
+
+# Cynical/Zealous
+carthage.38 = {
+    type = character_event
+    desc = EVTDESC_carthage_38
+	title = EVTNAME_carthage_38
+    
+	theme = pilgrimage_activity
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	override_icon = {
+		reference = "gfx/interface/event_window/type_faith.dds"
+	}
+	override_background = {
+		event_background = terrain
+	}
+	
+    option = {
+        name = EVTOPTA_carthage_38
+		#name = EVTOPTB_carthage_37
+		
+		stress_impact = {
+			cynical = medium_stress_impact_gain
+		}
+		
+		add_trait = zealous
+		add_piety = 50
+		
+		hidden_effect = {
+			if = {
+				limit = { has_character_flag = dl_temple_pilgrimage_mid }
+				trigger_event = { id = carthage.40 days = 8 } # Arrival at Temple
+			}
+			else = {
+				random_list = {
+					33 = { trigger_event = { id = carthage.40 days = 8 } } # Arrival at Temple
+					33 = { trigger_event = { id = carthage.37 days = 5 } } #People in Need
+					34 = { trigger_event = { id = carthage.39 days = 5 } } #Buy a holy item
+				}
+			}
+		}
+		
+		
+    }
+	
+    option = {
+        name = EVTOPTB_carthage_38
+		#name = EVTOPTC_carthage_37
+		
+		stress_impact = {
+			zealous = medium_stress_impact_gain
+		}
+		
+		add_trait = cynical
+		add_piety = -50
+		
+		hidden_effect = {
+			if = {
+				limit = { has_character_flag = dl_temple_pilgrimage_mid }
+				trigger_event = { id = carthage.40 days = 8 } # Arrival at Temple
+			}
+			else = {
+				random_list = {
+					33 = { trigger_event = { id = carthage.40 days = 8 } } # Arrival at Temple
+					33 = { trigger_event = { id = carthage.37 days = 5 } } #People in Need
+					34 = { trigger_event = { id = carthage.39 days = 5 } } #Buy a holy item
+				}
+			}
+		}
+    }
+	
+	after = {
+		add_character_flag = dl_temple_pilgrimage_mid
+	}
+}
+
+# Buy a Holy Relic
+carthage.39 = {
+    type = character_event
+    desc = EVTDESC_carthage_39
+	title = EVTNAME_carthage_39
+    
+	theme = pilgrimage_activity
+	left_portrait = root
+	override_background = {
+		event_background = temple
+	}
+	override_icon = {
+		reference = "gfx/interface/event_window/type_faith.dds"
+	}
+	
+    option = {
+        name = EVTOPTA_carthage_39
+		#name = EVTOPTD_carthage_37
+		
+		add_piety = 100
+		add_character_modifier = dl_canaanite_holy_relic
+		remove_short_term_gold = 100
+		
+		hidden_effect = {
+			if = {
+				limit = { has_character_flag = dl_temple_pilgrimage_mid }
+				trigger_event = { id = carthage.40 days = 8 } # Arrival at Temple
+			}
+			else = {
+				random_list = {
+					33 = { trigger_event = { id = carthage.40 days = 8 } } # Arrival at Temple
+					33 = { trigger_event = { id = carthage.37 days = 5 } } #Cynical/Zealous
+					34 = { trigger_event = { id = carthage.38 days = 5 } } #People in need
+				}
+			}
+		}
+		
+		
+    }
+	
+    option = {
+        name = EVTOPTB_carthage_39
+		
+		add_piety = -5
+		
+		hidden_effect = {
+			if = {
+				limit = { has_character_flag = dl_temple_pilgrimage_mid }
+				trigger_event = { id = carthage.40 days = 8 } # Arrival at Temple
+			}
+			else = {
+				random_list = {
+					33 = { trigger_event = { id = carthage.40 days = 8 } } # Arrival at Temple
+					33 = { trigger_event = { id = carthage.37 days = 5 } } #Cynical/Zealous
+					34 = { trigger_event = { id = carthage.38 days = 5 } } #People in Need
+				}
+			}
+		}
+    }
+	
+	after = {
+		add_character_flag = dl_temple_pilgrimage_mid
+	}
+}
+
+carthage.40 = { # Arrival at the Temple of Astarte/Tanit
+    type = character_event
+    desc = EVTDESC_carthage_40
+	title = EVTNAME_carthage_40
+    
+	theme = intrigue_temptation_focus
+	override_background = {
+		event_background = temple
+	}
+	
+	immediate = {
+		if = {
+			limit = { is_female = no }
+			create_character = {
+				gender_female_chance = 100
+				age = {16 25}
+				culture = root.culture
+				faith = root.faith
+				random_traits = yes
+				save_scope_as = dl_temple_goer
+			}
+		}
+		else = {
+			create_character = {
+				gender_female_chance = 0
+				age = {16 25}
+				culture = root.culture
+				faith = root.faith
+				random_traits = yes
+				save_scope_as = dl_temple_goer
+			}
+		}
+	}
+	
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:dl_temple_goer
+		animation = love
+	}
+	
+    option = {
+        name = EVTOPTA_carthage_40
+		
+		add_piety = 150
+		
+		had_sex_with_effect = {
+			CHARACTER = scope:dl_temple_goer
+			PREGNANCY_CHANCE = pregnancy_chance
+		}
+		add_character_modifier = performed_duty_to_astarte
+		
+		trigger_event = { id = carthage.41 days = 9 } # Go home
+    }
+	
+    option = {
+        name = EVTOPTB_carthage_40
+		
+		add_piety = -200
+		add_piety_level = -1
+		add_character_modifier = { name = failed_duty_to_astarte years = 10 }
+		hidden_effect = { remove_character_flag = travelled_to_astarte_temple }
+    }
+	
+	after = {
+		remove_character_flag = dl_temple_pilgrimage_mid
+	}
+}
+
+# Returned home, gain Pilgrim trait
+carthage.41 = {
+    type = character_event
+    desc = EVTDESC_carthage_41
+	title = EVTNAME_carthage_41
+    
+	theme = pilgrimage_activity
+	override_background = {
+		event_background = temple
+	}
+	left_portrait = root
+	
+    option = {
+        name = EVTOPTA_carthage_41
+		
+		add_trait = pilgrim
+		hidden_effect = { remove_character_flag = travelled_to_astarte_temple }
     }
 }

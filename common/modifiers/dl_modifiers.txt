@@ -5,10 +5,27 @@ dl_restorer_of_phoenicia = {
 	monthly_prestige = 0.3
 }
 
+dl_canaanite_holy_relic = {
+	icon = piety_positive
+	monthly_piety = 0.25
+	learning = 1
+}
+
 centre_of_mediterranean_trade = {
 	icon = economy_positive
 	monthly_income = 1
 	development_growth_factor = 0.25
+}
+
+failed_duty_to_astarte = {
+	icon = piety_negative
+	monthly_piety = -1
+	same_faith_opinion = -10
+}
+performed_duty_to_astarte = {
+	icon = piety_positive
+	monthly_piety = 0.2
+	same_faith_opinion = 5
 }
 
 baby_sacrificed_martial_best = {
@@ -216,19 +233,6 @@ iddum_damaged = {
 	local_build_time_modifier = 0.1
 	liege_piety = -0.75
 	icon = 49
-}
-
-failed_duty_to_astarte = {
-	monthly_piety = -1
-	same_religion_opinion = -10
-	
-	icon = 40
-}
-performed_duty_to_astarte = {
-	monthly_piety = 0.2
-	same_religion_opinion = 5
-	
-	icon = 39
 }
 
 residing_at_astarte_temple = {

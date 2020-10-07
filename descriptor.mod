@@ -9,4 +9,4 @@ tags={
 	"Historical"
 }
 name="Dido's Legacy"
-supported_version="1.0.3"
+supported_version="1.1.2"
