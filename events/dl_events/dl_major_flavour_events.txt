@@ -235,8 +235,10 @@ carthage.25 = {
     option = {
         name = EVTOPTA_carthage_25		
         custom_tooltip = { text= trade_hegemon_tt }
-		#scope:county = {
-		#	add_county_modifier = { modifier = centre_of_mediterranean_trade }
-		#}
+		scope:actor = {
+			capital_county = {
+				add_county_modifier = { modifier = centre_of_mediterranean_trade }
+			}
+		}
     }
 }

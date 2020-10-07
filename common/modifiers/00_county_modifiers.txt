@@ -98,3 +98,9 @@ canaanite_built_cippus = {
 	icon = county_modifier_development_positive
 	tax_mult = 0.05
 }
+
+centre_of_mediterranean_trade = {
+	icon = county_modifier_economy_positive
+	monthly_income = 1
+	development_growth_factor = 0.25
+}
