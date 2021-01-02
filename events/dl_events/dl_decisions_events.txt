@@ -666,45 +666,15 @@ cflavour.88 = {
 		hidden_tooltip = {
 			# Random festive events
 			random_list = {
-				40 = { character_event = { id = cflavour.89 days = 7 } } # Sponsor local performers
-				40 = { character_event = { id = cflavour.90 days = 7 } } # Priests like/dislike festival
-				20 = { character_event = { id = cflavour.94 days = 7 } } # Make a friend/enemy
-				
+				40 = { trigger_event = { id = cflavour.89 days = 7 } } # Sponsor local performers
+				40 = { trigger_event = { id = cflavour.90 days = 7 } } # Priests like/dislike festival
+				10 = { trigger_event = { id = cflavour.94 days = 7 } } # Make a friend
+				10 = { trigger_event = { id = cflavour.95 days = 7 } } # Make an enemy
 			}
 			# Random holy *sort of* events
 			random_list = {
-				50 = { character_event = { id = cflavour.95 days = 14 } } # Get hammered... to honour the gods?
-				50 = {
-					# Challenge: Duel or Debate
-					random_list = {
-						# Juul
-						50 = {
-							modifier = {
-								factor = 1.6
-								martial > 13
-							}
-							modifier = {
-								factor = 2
-								combat_rating > 40
-							}
-							add_character_flag = mayumas_duel
-							character_event = { id = cflavour.96 days = 14 }
-						}
-						# Debate
-						50 = {
-							modifier = {
-								factor = 1.6
-								diplomacy > 13
-							}
-							modifier = {
-								factor = 2
-								trait = socializer
-							}
-							add_character_flag = mayumas_debate
-							character_event = { id = cflavour.96 days = 14 }
-						}
-					}
-				} 
+				50 = { trigger_event = { id = cflavour.96 days = 14 } } # Get hammered... to honour the gods?
+				50 = { trigger_event = { id = cflavour.97 days = 14 }	} # Debate
 			}
 			# Random people events
 			random_list = {
@@ -712,9 +682,9 @@ cflavour.88 = {
 				40 = { add_character_flag = mayumas_people_idol }   # People desecrate idol
 				40 = { add_character_flag = mayumas_people_happy }  # People happy with festival
 			}
-			character_event = { id = cflavour.89 days = 21 }
-			character_event = { id = cflavour.99 days = 28 }
-			character_event = { id = cflavour.100 days = 35 }
+			trigger_event = { id = cflavour.89 days = 21 }
+			trigger_event = { id = cflavour.99 days = 28 }
+			trigger_event = { id = cflavour.100 days = 35 }
 		}
 	}
 }
@@ -977,30 +947,19 @@ cflavour.90 = {
 	}
 }
 
-# Make a friend... or an enemy
+# Make a friend
 cflavour.94 = {
 	type = character_event
-	picture = GFX_evt_fancy_feast
-	border = GFX_event_normal_frame_diplomacy
-	
-	
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { has_character_flag = mayumas_friend }
-				desc = EVTDESC_cflavour_94_friend
-			}
-			triggered_desc = {
-				trigger = { has_character_flag = mayumas_enemy }
-				desc= EVTDESC_cflavour_94_enemy
-			}
+	desc = EVTDESC_cflavour_94_friend
+	title = EVTNAME_cflavour_94	
+
+	immediate = {
+		random_vassal = {
+			save_scope_as = mayumas_frenemy
 		}
 	}
-	
+		
 	option = {
-		trigger = {
-			has_character_flag = mayumas_friend 
-		}
 		name = EVTOPTA_cflavour_94
 		
 		scope:mayumas_frenemy = {
@@ -1011,10 +970,23 @@ cflavour.94 = {
 			change_diplomacy = 1
 		}
 	}
+}
+
+
+# Make an enemy
+cflavour.95 = {
+	type = character_event
+	desc = EVTDESC_cflavour_94_enemy
+	title = EVTNAME_cflavour_95	
+	
+	immediate = {
+		random_vassal = {
+			save_scope_as = mayumas_frenemy
+		}
+	}
 	
 	option = {
 		trigger = {
-			has_character_flag = mayumas_enemy
 			OR = {	
 				diplomacy >= 14
 				trait = socializer
@@ -1030,9 +1002,6 @@ cflavour.94 = {
 		}
 	}
 	option = {
-		trigger = {
-			has_character_flag = mayumas_enemy
-		}
 		name = EVTOPTC_cflavour_94
 		
 		scope:mayumas_frenemy = {
@@ -1050,11 +1019,10 @@ cflavour.94 = {
 }
 
 # Get super drunk
-cflavour.95 = {
-	type = character_event
-	picture = GFX_evt_drunk
-	border = GFX_event_normal_frame_diplomacy
+cflavour.96 = {
+	type = character_event	
 	desc = EVTDESC_cflavour_95
+	title = EVTNAME_cflavour_96
 	
 	
 	option = {
@@ -1063,19 +1031,22 @@ cflavour.95 = {
 				trait = diligent
 				trait = patient
 				trait = temperate
-				trait = quick
-				trait = genius
-				trait = hedonist
+				trait = intellect_good_1
+				trait = intellect_good_2
+				trait = intellect_good_3
+				trait = reveler_1
+				trait = reveler_2
+				trait = reveler_3
 			}
 			NOR = {
 				trait = drunkard
-				trait = slothful
+				trait = lazy
 			}
 		}
 		name = EVTOPTA_cflavour_95
 		
-		add_piety = -50
-		add_prestige = 100
+		add_piety = -10
+		add_prestige = 10
 		
 		random = {
 			chance = 25
@@ -1086,65 +1057,31 @@ cflavour.95 = {
 	option = {
 		name = EVTOPTB_cflavour_95
 		
-		add_piety = -100
-		add_prestige = -100
+		add_piety = -50
+		add_prestige = 50
 		
 		add_trait = drunkard
 	}
 }
 
-# Hidden duel/debate ping
-cflavour.96 = {
-	type = character_event
-	hide_window = yes
-	
-	immediate = {
-		if = {
-			limit = { FROM = { has_character_flag = mayumas_debate } }
-			FROM = {
-				character_event = { id = cflavour.97 }
-			}
-		}
-		else_if = {
-			limit = { FROM = { has_character_flag = mayumas_duel } }
-			
-			save_scope_as = combatant_1 #the person issuing the duel...
-			FROM = {
-				save_scope_as = combatant_2
-				apply_degree_of_dishonorable_duel_effect = yes #checks a bunch of age and health statuses...
-				apply_any_applicable_harsh_penalties_effect = yes #if your target is someone
-			}
-	        
-	        pacifists_lose_piety_effect = yes
-	        add_character_modifier = {
-	            modifier = recent_duel_timer
-	            duration = 90
-	            hidden = yes
-	        }
-	        
-	        hidden_tooltip = {
-	            FROM = {
-					character_event = { id = HFP.10095 }
-				}
-	        }
-		}
-	}
-}
-
-# Actual debate start
+#Debate start
 cflavour.97 = {
 	type = character_event
 	desc = EVTDESC_cflavour_97
-	picture = GFX_evt_gathering_of_minds
-	border = GFX_event_normal_frame_diplomacy
 	
+	
+	immediate = {
+		random_vassal = {
+			save_scope_as = debate_opponent
+		}
+	}
 	
 	# Masterful point - instant win
 	option = {
 		trigger = {
 			OR = {
-				diplomacy = 14
-				trait = socializer
+				diplomacy >= 15
+				trait = diplomat
 			}
 			NOT = { trait = lunatic }
 		}
@@ -1153,14 +1090,16 @@ cflavour.97 = {
 		
 		prestige = 100
 		custom_tooltip = { text = mayumas_debate_win_tt }
-		add_character_modifier = { name = won_mayumas_debate years = 3 }
+		hidden_effect = {
+			add_character_modifier = mayumas_debate_win
+		}
 	}
 	
 	# Sabotage his notes - instant win
 	option = {
 		trigger = {
 			OR = {
-				intrigue = 14
+				intrigue >= 15
 				trait = schemer
 			}
 		}
@@ -1170,7 +1109,9 @@ cflavour.97 = {
 		prestige = 50
 		piety = -50
 		custom_tooltip = { text = mayumas_debate_win_tt }
-		add_character_modifier = { name = won_mayumas_debate years = 2 }
+		hidden_effect = {
+			add_character_modifier = mayumas_debate_win
+		}
 	}
 	
 	# Make a point - RNG chance to win
@@ -1181,9 +1122,8 @@ cflavour.97 = {
 		name = EVTOPTC_cflavour_97
 		
 		prestige = 50
-		custom_tooltip = {
-			text = mayumas_debate_might_tt
-			character_event = { id = cflavour.98 }
+		custom_tooltip = mayumas_debate_might_tt
+		hidden_effect = {
 			random_list = {
 				60 = {
 					modifier = {
@@ -1241,24 +1181,21 @@ cflavour.97 = {
 		
 		prestige = -100
 		custom_tooltip = { text = mayumas_debate_lose_tt }
-		add_character_modifier = { name = lost_mayumas_debate years = 3 }
+		hidden_effect = {
+			add_character_flag = mayumas_debate_lose
+		}
+	}
+	
+	after = {
+		trigger_event = { id = cflavour.98}
 	}
 }
+
 
 # Debate - the results are in...
 cflavour.98 = {
 	type = character_event
-	desc = EVTDESC_cflavour_98
-	picture = GFX_evt_gathering_of_minds
-	border = GFX_event_normal_frame_diplomacy
-	
-	
-	trigger = {
-        OR = {
-            has_character_flag = mayumas_debate_win
-            has_character_flag = mayumas_debate_lose
-        }
-    }
+	desc = EVTDESC_cflavour_98	
 	
 	# I can talk good, victory is MINE!!!
 	option = {
@@ -1283,7 +1220,7 @@ cflavour.98 = {
 		}
 		name = EVTOPTB_cflavour_98
 		
-		prestige = -150
+		prestige = -50
 		custom_tooltip = { text = mayumas_debate_lose_tt }
 		add_character_modifier = { name = lost_mayumas_debate years = 2 }
 	}
@@ -1292,24 +1229,24 @@ cflavour.98 = {
 # People approach the ruler
 cflavour.99 = {
 	type = character_event
-	border = GFX_event_normal_frame_religion
+	title = EVTNAME_cflavour_99
 	
-	picture = GFX_evt_runestone_raising_oldgods
+	
 	
 	desc = {
 		trigger = { has_character_flag = mayumas_people_relic }
 		text = EVTDESC_cflavour_99_relic
-		picture = GFX_evt_relic_box
+		
 	}
 	desc = {
 		trigger = { has_character_flag = mayumas_people_idol }
 		text = EVTDESC_cflavour_99_idol
-		picture = GFX_evt_runestone_raising_oldgods
+		
 	}
 	desc = {
 		trigger = { has_character_flag = mayumas_people_happy }
 		text = EVTDESC_cflavour_99_happy
-		picture = GFX_evt_fancy_feast
+		
 	}
 	
 	# Festival-goers offer a holy relic
@@ -1491,7 +1428,7 @@ cflavour.100 = {
 		}
 		
 		scope:mayumas_groom = {
-			character_event = { id = cflavour.101 }
+			trigger_event = { id = cflavour.101 }
 		}
 	}
 }
@@ -1504,7 +1441,7 @@ cflavour.101 = {
 	
 	immediate = {
 		FROM = {
-			long_character_event = { id = cflavour.102 }
+			long_trigger_event = { id = cflavour.102 }
 		}
 	}
 }
@@ -1513,8 +1450,8 @@ cflavour.101 = {
 cflavour.102 = {
 	type = character_event
 	desc = EVTDESC_cflavour_102
-	picture = GFX_evt_pilgrims_epic_journey
-	border = GFX_event_long_frame_religion
+	
+	
 	
 	
 	# Read a love poem
@@ -1541,7 +1478,7 @@ cflavour.102 = {
 			add_spouse = scope:mayumas_bride
 		}
 		
-		character_event = { id = cflavour.103 days = 1 }
+		trigger_event = { id = cflavour.103 days = 1 }
 	}
 	
 	# Offer large wedding present
@@ -1574,7 +1511,7 @@ cflavour.102 = {
 			add_spouse = scope:mayumas_bride
 		}
 		
-		character_event = { id = cflavour.103 days = 1 }
+		trigger_event = { id = cflavour.103 days = 1 }
 	}
 	
 	# Offer decent wedding present
@@ -1604,7 +1541,7 @@ cflavour.102 = {
 			add_spouse = scope:mayumas_bride
 		}
 		
-		character_event = { id = cflavour.103 days = 1 }
+		trigger_event = { id = cflavour.103 days = 1 }
 	}
 	
 	# Not worth the money...
@@ -1635,7 +1572,7 @@ cflavour.102 = {
 			add_spouse = scope:mayumas_bride
 		}
 		
-		character_event = { id = cflavour.103 days = 1 }
+		trigger_event = { id = cflavour.103 days = 1 }
 	}
 }
 
@@ -1643,15 +1580,15 @@ cflavour.102 = {
 cflavour.103 = {
 	type = character_event
 	desc = EVTDESC_cflavour_103
-	picture = GFX_evt_pilgrims_epic_journey
-	border = GFX_event_normal_frame_religion
+	
+	
 	
 	
 	option = {
 		name = EVTOPTA_cflavour_103
 		remove_short_term_gold = 10
 		add_trait = on_pilgrimage
-		character_event = { id = cflavour.104 days = 3 random = 3 }
+		trigger_event = { id = cflavour.104 days = 3 random = 3 }
 	}
 }
 
@@ -1659,8 +1596,8 @@ cflavour.103 = {
 cflavour.104 = {
 	type = character_event
 	desc = EVTDESC_cflavour_104
-	picture = GFX_evt_culture_change
-	border = GFX_event_normal_frame_religion
+	
+	
 	
 	
 	# We should do this again!
@@ -1731,7 +1668,6 @@ cflavour.104 = {
 }
 #== [3] RAISE A CIPPUS ==#
 cflavour.108 = {
-
 	type = character_event
 	hide_window = yes
 	
@@ -1861,8 +1797,8 @@ cflavour.111 = {
 	type = character_event
 	title = EVTNAME_cflavour_111
 	desc = EVTDESC_cflavour_111
-	picture = GFX_evt_religious_exultation
-	border = GFX_event_normal_frame_religion
+	
+	
 	theme = hunting
 	
 	left_portrait = {
